@@ -2,7 +2,7 @@
 title: Docker
 description: This is where you can find documentation for my Docker projects
 published: true
-date: 2023-06-19T21:18:08.403Z
+date: 2023-06-19T21:19:31.880Z
 tags: docker
 editor: markdown
 dateCreated: 2023-06-18T20:56:05.958Z
@@ -39,3 +39,7 @@ This section houses all documentation related to my self-hosted Docker container
 ## Self-hosted gateway
 
 <details><summary>A self-hosted Cloudflare Tunnel alternative</summary>
+  
+  **[Self-hosted gateway](/docker/self-hosted-gateway):** This document details how to set up a self-hosted gateway to safely expose your services to the internet without opening ports 80 and 443 on your home network.
+  
+</details>
