@@ -2,7 +2,7 @@
 title: Self-hosted gateway
 description: 
 published: true
-date: 2023-06-19T19:26:33.868Z
+date: 2023-06-19T19:29:54.409Z
 tags: gateway
 editor: markdown
 dateCreated: 2023-06-19T19:04:00.631Z
@@ -28,7 +28,7 @@ Please click on the dropdowns below to access the section you'd like.
 
 <details><summary>Building the gateway</summary>
   
-  **Building the gateway:** This section outlines the first part of the project: building the gateway.
+  **[Building the gateway](docker/self-hosted-gateway/building-gateway):** This section outlines the first part of the project: building the gateway.
   
 </details>
 
