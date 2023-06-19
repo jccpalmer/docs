@@ -2,7 +2,7 @@
 title: Self-hosted gateway
 description: 
 published: true
-date: 2023-06-19T19:31:09.298Z
+date: 2023-06-19T19:32:53.586Z
 tags: gateway
 editor: markdown
 dateCreated: 2023-06-19T19:04:00.631Z
@@ -40,6 +40,6 @@ Please click on the dropdowns below to access the section you'd like.
 
 <details><summary>Optional: Using Portainer to link networks</summary>
   
-  **Using Portainer to link networks:** This optional section goes over how to use Portainer to link existing containers to the link's network.
+  **[Using Portainer to link networks](/docker/self-hosted-gateway/portainer-link-network):** This optional section goes over how to use Portainer to link existing containers to the link's network.
   
 </details>
