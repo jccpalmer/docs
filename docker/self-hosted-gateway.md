@@ -2,7 +2,7 @@
 title: Self-hosted gateway
 description: 
 published: true
-date: 2023-06-19T19:29:54.409Z
+date: 2023-06-19T19:31:09.298Z
 tags: gateway
 editor: markdown
 dateCreated: 2023-06-19T19:04:00.631Z
@@ -34,7 +34,7 @@ Please click on the dropdowns below to access the section you'd like.
 
 <details><summary>Building the link</summary>
   
-  **Building the link:** This final required section details how to connect your service (link) to the gateway.
+  **[Building the link](/docker/self-hosted-gateway/building-link):** This final required section details how to connect your service (link) to the gateway.
   
 </details>
 
