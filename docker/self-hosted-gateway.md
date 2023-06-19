@@ -2,7 +2,7 @@
 title: Self-hosted gateway
 description: 
 published: true
-date: 2023-06-19T19:23:36.596Z
+date: 2023-06-19T19:24:51.197Z
 tags: gateway
 editor: markdown
 dateCreated: 2023-06-19T19:04:00.631Z
@@ -16,7 +16,7 @@ Please click on the dropdowns below to access the section you'd like.
 
 <details><summary>Overview</summary>
   
-  **[Overview](/:** This section details what the project is about, how I discovered it, and everything else you might need to know.
+  **[Overview](/docker/self-hosted-gateway/overview):** This section details what the project is about, how I discovered it, and everything else you might need to know.
   
 </details>
 
