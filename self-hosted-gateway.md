@@ -2,7 +2,7 @@
 title: Self-hosted gateway
 description: 
 published: true
-date: 2023-06-19T19:23:05.892Z
+date: 2023-06-19T19:23:36.596Z
 tags: gateway
 editor: markdown
 dateCreated: 2023-06-19T19:04:00.631Z
