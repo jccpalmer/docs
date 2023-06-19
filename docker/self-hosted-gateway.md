@@ -2,7 +2,7 @@
 title: Self-hosted gateway
 description: 
 published: true
-date: 2023-06-19T19:24:51.197Z
+date: 2023-06-19T19:26:33.868Z
 tags: gateway
 editor: markdown
 dateCreated: 2023-06-19T19:04:00.631Z
@@ -22,7 +22,7 @@ Please click on the dropdowns below to access the section you'd like.
 
 <details><summary>Prerequisites and preparation</summary>
   
-  **Prerequisites and preparation:** This section goes over what you need to get started and how to do so.
+  **[Prerequisites and preparation](docker/self-hosted-gateway/prereq-prep):** This section goes over what you need to get started and how to do so.
   
 </details>
 
