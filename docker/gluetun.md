@@ -2,7 +2,7 @@
 title: Gluetun VPN Tunnel
 description: 
 published: true
-date: 2023-06-19T13:19:45.513Z
+date: 2023-06-19T19:04:23.920Z
 tags: docker
 editor: markdown
 dateCreated: 2023-06-18T21:04:27.104Z
@@ -10,7 +10,9 @@ dateCreated: 2023-06-18T21:04:27.104Z
 
 # Project scope
 
-This document describes how to set up a Gluetun VPN tunnel Docker container through which other container traffic may be routed. Please click the dropdowns below to view the different sections of this document.
+This document describes how to set up a Gluetun VPN tunnel Docker container through which other container traffic may be routed.
+
+Please click the dropdowns below to view the different sections of this document.
 
 <details><summary>Overview</summary>
   
