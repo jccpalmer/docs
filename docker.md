@@ -2,7 +2,7 @@
 title: Docker
 description: This is where you can find documentation for my Docker projects
 published: true
-date: 2023-06-20T00:08:22.340Z
+date: 2023-06-20T00:17:12.241Z
 tags: docker
 editor: markdown
 dateCreated: 2023-06-18T20:56:05.958Z
@@ -41,5 +41,37 @@ This section houses all documentation related to my self-hosted Docker container
 <details><summary>A self-hosted Cloudflare Tunnel alternative.</summary>
   
   **[Self-hosted gateway](/docker/self-hosted-gateway):** This document details how to set up a self-hosted gateway to safely expose your services to the internet without opening ports 80 and 443 on your home network.
+  
+</details>
+
+## Calibre & Calibre Web
+
+<details><summary>Calibre in a Docker container, along with Calibre Web for easier remote interaction and Kobo sync.</summary>
+  
+  **[Calibre and Calibre Web]:** This document details how to run Calibre in a Docker container, sync to a NAS for automatic book addition, and set up Calibre Web (including syncing to Kobo).
+  
+</details>
+
+## Jellyfin
+
+<details><summary>A self-hosted media server; a FOSS alternative to Plex.</summary>
+  
+  **[Jellyfin]:** This document goes over how I set up my Jellyfin Docker container that pulls media from my NAS.
+  
+</details>
+
+## Vaultwarden migration
+
+<details><summary>A completely self-hosted password manager.</summary>
+  
+  **[Vaultwarden]:** This document discusses my migration from Enpass to Vaultwarden for password management. It also describes how to set up the Docker container.
+  
+</details>
+
+## Homer dashboard
+
+<details><summary>A self-hosted dashboard for local and public services.</summary>
+  
+  **[Homer]:** This document describes how to set up a self-hosted dashboard using a Homer Docker container.
   
 </details>
