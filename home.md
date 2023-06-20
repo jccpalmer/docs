@@ -2,7 +2,7 @@
 title: Home
 description: 
 published: true
-date: 2023-06-19T21:13:46.396Z
+date: 2023-06-20T00:37:08.382Z
 tags: home
 editor: markdown
 dateCreated: 2023-06-18T20:47:20.570Z
@@ -28,12 +28,12 @@ This portfolio is broken up into three main sections: Docker, Hardware, and Soft
 
 <details><summary>Hardware</summary>
   
-  **Hardware:** This is the landing page for all of my hardware projects.
+  **[Hardware](/hardware):** This is the landing page for all of my hardware projects.
   
 </details>
 
 <details><summary>Software</summary>
   
-  **Software:** If you're looking for my software project documentation, this is the landing page.
+  **[Software](/software):** If you're looking for my software project documentation, this is the landing page.
   
 </details>
