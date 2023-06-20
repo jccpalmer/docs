@@ -2,7 +2,7 @@
 title: Docker
 description: 
 published: true
-date: 2023-06-20T00:46:52.461Z
+date: 2023-06-20T00:53:41.069Z
 tags: docker
 editor: markdown
 dateCreated: 2023-06-18T20:56:05.958Z
@@ -11,6 +11,8 @@ dateCreated: 2023-06-18T20:56:05.958Z
 # Projects
 
 This section houses all documentation related to my self-hosted Docker container projects in my homelab. I run everything in a Debian virtual machine on a Proxmox server. This area is by far what I spend most of my time on. Full write-ups for these projects can be found on my [blog](https://www.jccpalmer.com/blog).
+
+Note that these are separate from my [software](/software) projects.
 
 ## Wiki.js
 
