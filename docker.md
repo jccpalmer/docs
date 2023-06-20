@@ -2,7 +2,7 @@
 title: Docker
 description: 
 published: true
-date: 2023-06-20T00:27:43.883Z
+date: 2023-06-20T00:46:52.461Z
 tags: docker
 editor: markdown
 dateCreated: 2023-06-18T20:56:05.958Z
@@ -18,6 +18,14 @@ This section houses all documentation related to my self-hosted Docker container
   
 **[Wiki.js](/docker/wiki-js):** This document details how to set up Wiki.js for your own documentation portfolio, as well as my migration from Bookstack.
 
+</details>
+
+## Grav
+
+<details><summary>The CMS that my website is based on.</summary>
+  
+  **[Grav](/docker/grav):** This document outlines how I set up Grav, a lightweight CMS for my website.
+  
 </details>
 
 ## Gluetun VPN tunnel
