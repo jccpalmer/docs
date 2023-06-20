@@ -2,7 +2,7 @@
 title: Software
 description: 
 published: true
-date: 2023-06-20T00:42:24.776Z
+date: 2023-06-20T00:44:42.318Z
 tags: software
 editor: markdown
 dateCreated: 2023-06-20T00:39:46.020Z
@@ -22,6 +22,16 @@ Here is where you'll find all documentation for my software projects. Note that 
 
 ## Bluebubbles (iMessage on PC/Android)
 
+<details><summary>Building a Bluebubbles server to get iMessage on PC and Android.</summary>
+  
+  **[Bluebubbles]:** This document outlines how I set up a Bluebubbles server to get iMessage on PC and Android.
+  
+</details>
+
 ## Home Assistant
 
-## Grav
+<details><summary>All of my Home Assistant projects</summary>
+  
+  **[Home Assistant]:** This document details all of my Home Assistant projects that I've worked on. For now, it's just my dashboards.
+  
+</details>
