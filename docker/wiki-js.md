@@ -2,8 +2,8 @@
 title: Wiki.js
 description: 
 published: true
-date: 2023-06-19T21:09:16.545Z
-tags: wiki
+date: 2023-06-20T00:31:37.813Z
+tags: docker, wiki
 editor: markdown
 dateCreated: 2023-06-19T21:02:08.983Z
 ---
