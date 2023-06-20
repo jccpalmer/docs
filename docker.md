@@ -2,7 +2,7 @@
 title: Docker
 description: 
 published: true
-date: 2023-06-20T00:18:27.105Z
+date: 2023-06-20T00:27:43.883Z
 tags: docker
 editor: markdown
 dateCreated: 2023-06-18T20:56:05.958Z
@@ -32,7 +32,7 @@ This section houses all documentation related to my self-hosted Docker container
 
 <details><summary>A Deluge BitTorrent container that's masked behind a VPN.</summary>
   
-  **[Deluge VPN](/docker/deluge-vpn):** This document describes how to create a Deluge Docker container with traffic that routes through the Gluetun VPN tunnel described in another document. This will also show how to have Deluge download files to a NAS via a SMB share.
+  **[Deluge VPN](/docker/deluge):** This document describes how to create a Deluge Docker container with traffic that routes through the Gluetun VPN tunnel described in another document. This will also show how to have Deluge download files to a NAS via a SMB share.
   
 </details>
 
