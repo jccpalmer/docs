@@ -2,7 +2,7 @@
 title: Wiki.js
 description: 
 published: true
-date: 2023-06-20T00:31:37.813Z
+date: 2023-06-20T01:05:27.087Z
 tags: docker, wiki
 editor: markdown
 dateCreated: 2023-06-19T21:02:08.983Z
@@ -10,7 +10,7 @@ dateCreated: 2023-06-19T21:02:08.983Z
 
 # Project scope
 
-This document details how I migrated this documentation portfolio from Bookstack to Wiki.js, which is a FOSS platform that is more modern.
+This document details how I migrated this documentation portfolio from Bookstack to Wiki.js, a more modern FOSS platform.
 
 <details><summary>Overview</summary>
   
