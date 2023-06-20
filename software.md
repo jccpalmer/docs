@@ -2,7 +2,7 @@
 title: Software
 description: 
 published: true
-date: 2023-06-20T00:44:42.318Z
+date: 2023-06-20T00:48:58.373Z
 tags: software
 editor: markdown
 dateCreated: 2023-06-20T00:39:46.020Z
@@ -24,7 +24,7 @@ Here is where you'll find all documentation for my software projects. Note that 
 
 <details><summary>Building a Bluebubbles server to get iMessage on PC and Android.</summary>
   
-  **[Bluebubbles]:** This document outlines how I set up a Bluebubbles server to get iMessage on PC and Android.
+  **[Bluebubbles](/software/bluebubbles):** This document outlines how I set up a Bluebubbles server to get iMessage on PC and Android.
   
 </details>
 
