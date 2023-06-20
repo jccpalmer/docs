@@ -2,7 +2,7 @@
 title: Deluge VPN
 description: 
 published: true
-date: 2023-06-19T13:26:18.917Z
+date: 2023-06-20T01:06:33.850Z
 tags: docker
 editor: markdown
 dateCreated: 2023-06-19T00:46:35.768Z
@@ -10,7 +10,7 @@ dateCreated: 2023-06-19T00:46:35.768Z
 
 # Project scope
 
-This document describes how to create a Deluge Docker container with traffic that routes through the Gluetun VPN tunnel described in the [Gluetun VPN Tunnel](/docker/gluetun) document. This will also show how to have Deluge download files to a NAS via an SMB share.
+This document describes how to create a Deluge Docker container with traffic that routes through the Gluetun VPN tunnel described in the [Gluetun VPN tunnel](/docker/gluetun) document. This will also show how to have Deluge download files to a NAS via an SMB share.
 
 Please click the dropdowns below to access the section you need.
 
