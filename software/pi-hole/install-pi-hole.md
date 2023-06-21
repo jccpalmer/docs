@@ -2,7 +2,7 @@
 title: Installing Pi-Hole
 description: 
 published: true
-date: 2023-06-21T12:04:45.108Z
+date: 2023-06-21T12:15:33.795Z
 tags: software, ads, pi-
 editor: markdown
 dateCreated: 2023-06-21T11:07:17.020Z
