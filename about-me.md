@@ -1,8 +1,8 @@
 ---
 title: About me
-description: If you've landed here instead of my main website first, this is where you can learn a little more about me, my experience, and my goals.
+description: 
 published: true
-date: 2023-06-21T19:31:32.364Z
+date: 2023-06-21T19:32:20.886Z
 tags: about
 editor: markdown
 dateCreated: 2023-06-19T01:26:05.389Z
