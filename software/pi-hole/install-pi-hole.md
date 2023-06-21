@@ -2,11 +2,15 @@
 title: Installing Pi-Hole
 description: 
 published: true
-date: 2023-06-21T13:12:56.630Z
+date: 2023-06-21T13:33:09.460Z
 tags: software, ads, pi-
 editor: markdown
 dateCreated: 2023-06-21T11:07:17.020Z
 ---
+
+## Project steps
+
+Below are the steps needed to get Pi-Hole installed.
 
 1. Open a terminal on the machine you'd like to install Pi-Hole on, be it locally or over SSH.
 2. Input the following command in the terminal.
