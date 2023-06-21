@@ -2,7 +2,7 @@
 title: Installing the Gluetun container
 description: 
 published: true
-date: 2023-06-21T13:36:00.039Z
+date: 2023-06-21T13:37:28.378Z
 tags: docker
 editor: markdown
 dateCreated: 2023-06-19T00:39:00.631Z
@@ -18,7 +18,7 @@ Below are the steps needed to get the Gluetun container installed.
 	1. `cd docker/gluetun`
 2. Create a file called `docker-compose.yml`
 3. Open the `docker-compose.yml` file in a text editor.
-4. Copy the following contents into it. It is recommended to copy this code first into a blank notepad file to strip any formatting.
+4. Copy the following contents into it. It is recommended to copy this code first into a blank notepad file to strip any formatting. (Also note the indentation; YAML is very particular about indentation.)
 ```
 version: "3"
 services:
