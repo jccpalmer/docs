@@ -2,7 +2,7 @@
 title: Pi-Hole
 description: 
 published: true
-date: 2023-06-21T11:06:09.506Z
+date: 2023-06-21T11:08:59.725Z
 tags: software, pi-hole, ads
 editor: markdown
 dateCreated: 2023-06-21T11:01:22.038Z
@@ -15,6 +15,12 @@ This document describes how to set up Pi-Hole for network-wide ad blocking. It a
 <details><summary>Overview</summary>
   
   **[Overview](/software/pi-hole/overview):** This section gives a brief overview of the project.
+  
+</details>
+
+<details><summary>Prerequisites and preparation</summary>
+  
+  **[Prerequisites and preparation](/software/pi-hole/prereq-prep):** This section details what you will need to get started.
   
 </details>
 
