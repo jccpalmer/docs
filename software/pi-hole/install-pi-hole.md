@@ -2,7 +2,7 @@
 title: Installing Pi-Hole
 description: 
 published: true
-date: 2023-06-21T13:33:09.460Z
+date: 2023-06-21T19:06:24.881Z
 tags: software, ads, pi-
 editor: markdown
 dateCreated: 2023-06-21T11:07:17.020Z
@@ -15,9 +15,9 @@ Below are the steps needed to get Pi-Hole installed.
 1. Open a terminal on the machine you'd like to install Pi-Hole on, be it locally or over SSH.
 2. Input the following command in the terminal.
 	1. `curl -sSL https://install.pi-hole.net | bash`
-3. Enter your user account password. Let the installation script goes through its process until it asks you for input. Follow the prompts.
+3. Enter your user account password. Let the installation script go through its process until it asks you for input. Follow the prompts.
 4. At the **Choose An Interface** screen, your default ethernet device should be the first option selected. It might be called `eth0` or `ens18`.
-5. On the **Choose Upstream DNS Provider** screen, for now, choose something like Google. You will be changing this later after you uninstall and configure Unbound. 
+5. On the **Choose Upstream DNS Provider** screen, for now, choose something like Google. You will be changing this later after you install and configure Unbound. 
 6. On the **Blocklists** screen, select `Yes` to use the default blocklist. You can adjust this later if you choose.
 7. On the **Admin Web Interface** screen, select `Yes`.
 8. On the **Web Server** screen, select `Yes` to install admin interface's web server requirements.
