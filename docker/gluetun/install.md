@@ -2,11 +2,15 @@
 title: Installing the Gluetun container
 description: 
 published: true
-date: 2023-06-19T00:39:03.525Z
+date: 2023-06-21T13:36:00.039Z
 tags: docker
 editor: markdown
 dateCreated: 2023-06-19T00:39:00.631Z
 ---
+
+## Project steps
+
+Below are the steps needed to get the Gluetun container installed.
 
 1. Create a folder for the Gluetun container.
 	1. In this example, that would be `docker/gluetun`
