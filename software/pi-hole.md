@@ -2,7 +2,7 @@
 title: Pi-Hole
 description: 
 published: true
-date: 2023-06-21T19:21:56.104Z
+date: 2023-06-21T19:25:01.412Z
 tags: software, pi-hole, ads
 editor: markdown
 dateCreated: 2023-06-21T11:01:22.038Z
@@ -11,6 +11,8 @@ dateCreated: 2023-06-21T11:01:22.038Z
 # Project scope
 
 This document describes how to set up Pi-Hole for network-wide ad blocking. It also includes optional steps for setting up Unbound for recursive DNS resolution in case you don't want to use a third-party DNS resolver like Google or Cloudflare.
+
+Please click the below dropdowns to access the section you need.
 
 <details><summary>Overview</summary>
   
