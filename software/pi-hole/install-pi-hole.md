@@ -2,7 +2,7 @@
 title: Installing Pi-Hole
 description: 
 published: true
-date: 2023-06-21T13:06:41.561Z
+date: 2023-06-21T13:12:56.630Z
 tags: software, ads, pi-
 editor: markdown
 dateCreated: 2023-06-21T11:07:17.020Z
@@ -23,7 +23,9 @@ dateCreated: 2023-06-21T11:07:17.020Z
 12.  Be sure to set a static IP address for the Pi-Hole machine in your router settings.
 13. To access the admin interface, in your browser, type in either `http://pi.hole/admin` or `http://SERVERIP/admin`.
 14. The following screen will appear.
+		![pi-hole-login.png](/pi-hole-login.png)
 15. To access the password, go back to the terminal window and look several lines up from the bottom for a line that says `Web Interface Password:`.
-	1. It should be in green text.
+		![pi-hole-password.png](/pi-hole-password.png)
 16. Once you enter your password, you will see the web interface, which should look like the below image.
+		![pi-hole-interface.png](/pi-hole-interface.png)
 17. Go to your router's DNS settings and input the Pi-Hole server's IP address. Save the options and go test an ad-heavy website, such as [MSN](https://www.msn.com).
