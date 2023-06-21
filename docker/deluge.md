@@ -2,7 +2,7 @@
 title: Deluge VPN
 description: 
 published: true
-date: 2023-06-20T01:06:33.850Z
+date: 2023-06-21T13:39:57.495Z
 tags: docker
 editor: markdown
 dateCreated: 2023-06-19T00:46:35.768Z
@@ -28,7 +28,7 @@ Please click the dropdowns below to access the section you need.
 
 <details><summary>Installing the Deluge container</summary>
   
-  **Installing the Deluge container:** This section outlines how to install the Deluge container, including the Docker Compose content.
+  **[Installing the Deluge container](/docker/deluge/install):** This section outlines how to install the Deluge container, including the Docker Compose content.
   
 </details>
 
