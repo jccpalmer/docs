@@ -2,7 +2,7 @@
 title: Installing Unbound
 description: 
 published: true
-date: 2023-06-21T11:13:34.457Z
+date: 2023-06-21T12:02:34.096Z
 tags: software, pi-hole, ads
 editor: markdown
 dateCreated: 2023-06-21T11:13:34.457Z
@@ -91,7 +91,7 @@ dateCreated: 2023-06-21T11:13:34.457Z
 
 ### Resolving the resolvconf.conf errors
 
-If you're using a Debian-based distro for this, you might encounter a conflict with Unbound's resolver and the system's resolvconf service. This can interfere with Pi-Hole/Ubound, so here's how to fix that issue.
+If you're using a Debian-based distro for this, you might encounter a conflict with Unbound's resolver and the system's resolvconf service. This can interfere with Pi-Hole/Unbound, so here's how to fix that issue.
 
 1. First check to see if the conflict is an issue. Type in the following command on the machine where you installed Pi-Hole (locally or over SSH).
 	1. `systemctl is-active unbound-resolvconf.service`
