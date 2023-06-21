@@ -2,7 +2,7 @@
 title: Installing Unbound
 description: 
 published: true
-date: 2023-06-21T12:02:34.096Z
+date: 2023-06-21T13:17:06.121Z
 tags: software, pi-hole, ads
 editor: markdown
 dateCreated: 2023-06-21T11:13:34.457Z
@@ -88,6 +88,9 @@ dateCreated: 2023-06-21T11:13:34.457Z
 7. Ensure that none of the third-party options are selected.
 8. Click the checkbox for **Custom 1 (IPV4)**, then in the text box, enter the following. (This is telling Pi-Hole to listen on the localhost at port `5335`, which is where the above config file told Unbound to broadcast to.)
 	1. `127.0.0.1#5335`
+9. Make sure your settings match the below image.
+		![pi-hole-unbound.png](/pi-hole-unbound.png)
+10. Scroll down to the bottom of the page and click **Save**.
 
 ### Resolving the resolvconf.conf errors
 
