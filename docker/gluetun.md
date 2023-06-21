@@ -2,7 +2,7 @@
 title: Gluetun VPN tunnel
 description: 
 published: true
-date: 2023-06-20T01:06:20.553Z
+date: 2023-06-21T13:35:24.889Z
 tags: docker
 editor: markdown
 dateCreated: 2023-06-18T21:04:27.104Z
@@ -28,6 +28,6 @@ Please click the dropdowns below to view the different sections of this document
 
 <details><summary>Installing the Gluetun container</summary>
   
-  **[Installing the Gluetun container](docker/gluetun/install):** This final section details the steps needed to set up the Gluetun container, including the Docker Compose content.
+  **[Installing the Gluetun container](/docker/gluetun/install):** This final section details the steps needed to set up the Gluetun container, including the Docker Compose content.
   
 </details>
