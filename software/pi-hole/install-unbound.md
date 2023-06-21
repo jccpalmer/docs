@@ -2,7 +2,7 @@
 title: Installing Unbound
 description: 
 published: true
-date: 2023-06-21T13:19:58.220Z
+date: 2023-06-21T13:30:23.203Z
 tags: software, pi-hole, ads
 editor: markdown
 dateCreated: 2023-06-21T11:13:34.457Z
@@ -16,8 +16,6 @@ dateCreated: 2023-06-21T11:13:34.457Z
 4. Copy the following contents into the blank file.
 <details>
   <summary>Unbound config</summary>
-<br>
-		```
       server:
       # If no logfile is specified, syslog is used
       # logfile: "/var/log/unbound/unbound.log"
@@ -83,8 +81,6 @@ dateCreated: 2023-06-21T11:13:34.457Z
       private-address: 10.0.0.0/8
       private-address: fd00::/8
       private-address: fe80::/10
-		```
-  
 </details>
 
 5. 	Restart Unbound with the following command.
