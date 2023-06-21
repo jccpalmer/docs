@@ -2,7 +2,7 @@
 title: Pi-Hole
 description: 
 published: true
-date: 2023-06-21T11:08:59.725Z
+date: 2023-06-21T12:01:36.037Z
 tags: software, pi-hole, ads
 editor: markdown
 dateCreated: 2023-06-21T11:01:22.038Z
@@ -32,6 +32,6 @@ This document describes how to set up Pi-Hole for network-wide ad blocking. It a
 
 <details><summary>Installing Unbound</summary>
   
-  **[Installing Unbound](/software/pi-hole-/install-unbound):** This final section goes over how to get Unbound configured.
+  **[Installing Unbound](/software/pi-hole/install-unbound):** This final section goes over how to get Unbound configured.
   
 </details>
