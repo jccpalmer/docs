@@ -2,11 +2,15 @@
 title: Installing Unbound
 description: 
 published: true
-date: 2023-06-21T13:30:47.681Z
+date: 2023-06-21T13:33:46.372Z
 tags: software, pi-hole, ads
 editor: markdown
 dateCreated: 2023-06-21T11:13:34.457Z
 ---
+
+## Project steps
+
+Below are the steps needed to get Unbound installed and configured.
 
 1. Open a terminal on the machine where you installed Pi-Hole, be it locally or over SSH.
 2. For Debian-based distros, input the following command.
