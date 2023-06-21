@@ -2,7 +2,7 @@
 title: Installing the Gluetun container
 description: 
 published: true
-date: 2023-06-21T13:37:28.378Z
+date: 2023-06-21T13:38:06.606Z
 tags: docker
 editor: markdown
 dateCreated: 2023-06-19T00:39:00.631Z
@@ -50,7 +50,7 @@ services:
 ```
 6. You will need to determine which protocol your VPN provider wants you to use. ProtonVPN, for example, uses OpenVPN at time of writing and did not offer a Wireguard configuration.
 7. Exit the text editor.
-8. If you are following the [Deluge VPN](https://docs.jccpalmer.com/books/docker/chapter/deluge-vpn) instructions, do not start the Gluetun container yet.
+8. If you are following the [Deluge VPN](/docker/deluge) instructions, do not start the Gluetun container yet.
 9. If you are not following the Deluge VPN instructions, then type the following.
 	1. `docker-compose up -d`
 10. The Gluetun container will download the resources it needs and start. 
