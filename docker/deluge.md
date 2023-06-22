@@ -2,7 +2,7 @@
 title: Deluge VPN
 description: 
 published: true
-date: 2023-06-22T19:23:06.779Z
+date: 2023-06-22T19:42:26.282Z
 tags: docker
 editor: markdown
 dateCreated: 2023-06-19T00:46:35.768Z
@@ -124,7 +124,10 @@ Below are the steps to get the Deluge container installed. You will be adjusting
 
 ![deluge-1-1.jpg](/deluge-1-1.jpg)
 
-12. The Deluge container is installed and ready for use. Please refer to the next document for setting up the connection via Gluetun.
+12. The Deluge container is installed and ready for use if you don't want it masked behind a VPN. Assuming that you do, open your terminal to the Deluge directory and type the following.
+  	1. `docker-compose down`
+  	2. This will stop the Deluge container so that you can start Gluetun on port `8112`.
+13. Move over to Gluetun and refer to those [instructions](/docker/gluetun) on setting it up and starting it before proceeding to the next Deluge section.
   
 </details>
 
