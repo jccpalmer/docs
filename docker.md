@@ -2,7 +2,7 @@
 title: Docker
 description: 
 published: true
-date: 2023-06-20T00:53:41.069Z
+date: 2023-06-22T20:11:30.053Z
 tags: docker
 editor: markdown
 dateCreated: 2023-06-18T20:56:05.958Z
@@ -30,19 +30,21 @@ Note that these are separate from my [software](/software) projects.
   
 </details>
 
-## Gluetun VPN tunnel
-
-<details><summary>A container that can route other containers through a VPN.</summary>
-  
-  **[Gluetun VPN tunnel](/docker/gluetun):** This document describes how to set up a Gluetun VPN tunnel Docker container through which other container traffic may be routed.
-  
-</details>
-
 ## Deluge VPN
 
 <details><summary>A Deluge BitTorrent container that's masked behind a VPN.</summary>
   
   **[Deluge VPN](/docker/deluge):** This document describes how to create a Deluge Docker container with traffic that routes through the Gluetun VPN tunnel described in another document. This will also show how to have Deluge download files to a NAS via a SMB share.
+  
+  Start here first to ensure that you can install the Deluge container as-is, then proceed to the Gluetun instructions when directed.
+  
+</details>
+
+## Gluetun VPN tunnel
+
+<details><summary>A container that can route other containers through a VPN.</summary>
+  
+  **[Gluetun VPN tunnel](/docker/gluetun):** This document describes how to set up a Gluetun VPN tunnel Docker container that you can route other Docker container traffic through.
   
 </details>
 
