@@ -2,7 +2,7 @@
 title: Deluge VPN
 description: 
 published: true
-date: 2023-06-22T20:00:45.693Z
+date: 2023-06-22T20:03:08.253Z
 tags: docker
 editor: markdown
 dateCreated: 2023-06-19T00:46:35.768Z
@@ -172,7 +172,6 @@ Below are the steps necessary to set up Deluge to connect through the Gluetun VP
   ```
   
 </details>
-  
 4. However, since we have told Gluetun to be listening on port `8112`, you need to remove it from the Deluge container's Docker Compose.
 5. Further, you need to also link Deluge to Gluetun's network. So your Docker Compose code should look like the following.
   
@@ -206,9 +205,9 @@ Below are the steps necessary to set up Deluge to connect through the Gluetun VP
 6. Exit the Docker Compose file, then type the following command.
   	1. `docker compose up -d`
   
-## Errors with `network_mode: container`
+### Errors with `network_mode: container`
   
-1. The container should start up. If, however, you run into errors, you can shut Deluge down with the following command.
+1. The container should start up with the previous configuration. If, however, you run into errors, you can shut Deluge down with the following command while inside the Deluge directory.
   	1. `docker compose down`
 2. Open your `docker-compose.yml` file and try changing `network_mode` to `service: gluetun` like the below code.
   
@@ -239,7 +238,9 @@ Below are the steps necessary to set up Deluge to connect through the Gluetun VP
   ```
   
 </details>
-
+3. Load up the container again with the following command.
+  	1. `docker compose up -d`
+  
 </details>
 
 <details><summary>Optional: Using Portainer for installation</summary>
