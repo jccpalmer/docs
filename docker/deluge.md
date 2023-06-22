@@ -2,7 +2,7 @@
 title: Deluge VPN
 description: 
 published: true
-date: 2023-06-22T20:15:07.801Z
+date: 2023-06-22T20:35:57.524Z
 tags: docker
 editor: markdown
 dateCreated: 2023-06-19T00:46:35.768Z
@@ -242,6 +242,7 @@ Below are the steps necessary to set up Deluge to connect through the Gluetun VP
   ```
   
 </details>
+  
 3. Load up the container again with the following command.
   	1. `docker compose up -d`
   
