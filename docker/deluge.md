@@ -2,7 +2,7 @@
 title: Deluge VPN
 description: 
 published: true
-date: 2023-06-22T20:12:34.653Z
+date: 2023-06-22T20:13:51.265Z
 tags: docker
 editor: markdown
 dateCreated: 2023-06-19T00:46:35.768Z
@@ -166,6 +166,7 @@ Below are the steps necessary to set up Deluge to connect through the Gluetun VP
           - /home/USERNAME/docker/deluge/config:/config
           - /home/USERNAME/downloads:/downloads
          ports:
+          - 8112:8112
           - 6881:6881
           - 6881:6881/udp
         restart: unless-stopped
@@ -194,7 +195,6 @@ Below are the steps necessary to set up Deluge to connect through the Gluetun VP
           - /home/USERNAME/docker/deluge/config:/config
           - /home/USERNAME/downloads:/downloads
          ports:
-          - 8112:8112
           - 6881:6881
           - 6881:6881/udp
         restart: unless-stopped
@@ -234,7 +234,6 @@ Below are the steps necessary to set up Deluge to connect through the Gluetun VP
           - /home/USERNAME/docker/deluge/config:/config
           - /home/USERNAME/downloads:/downloads
          ports:
-          - 8112:8112
           - 6881:6881
           - 6881:6881/udp
         restart: unless-stopped
