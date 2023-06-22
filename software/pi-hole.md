@@ -2,7 +2,7 @@
 title: Pi-Hole
 description: 
 published: true
-date: 2023-06-22T19:02:36.149Z
+date: 2023-06-22T19:04:08.679Z
 tags: software, pi-hole, ads
 editor: markdown
 dateCreated: 2023-06-21T11:01:22.038Z
@@ -16,11 +16,11 @@ Please click the below dropdowns to access the section you need.
 
 <details><summary>Overview</summary>
   
-[Pi-Hole](https://pi-hole.net) is a popular DNS sinkhole that serves as network-wide ad blocking. It's easy to set up and it works wonders on blocking ads and trackers on your network. It can run on very light hardware, including its namesake, the Raspberry Pi. 
+[Pi-Hole](https://pi-hole.net) is a popular DNS sinkhole that serves as a network-wide ad blocker. It's easy to set up and it works wonders on blocking ads and trackers on your network. It can run on very light hardware, including its namesake, the Raspberry Pi. 
 
-My installation sits in a [Linux Container (LXC)](https://linuxcontainers.org/) on one of my [Proxmox](https://www.proxmox.com/en/) nodes. (Proxmox is the hypervisor that I use on my servers.) An LXC is more lightweight than a full virtual machine, which is how I used to run Pi-Hole when I switched to a full server. 
+My installation sits in a [Linux Container (LXC)](https://linuxcontainers.org/) on one of my [Proxmox](https://www.proxmox.com/en/) nodes. (Proxmox is the hypervisor that I use on my servers.) An LXC uses fewer resources than a full virtual machine. 
 
-With this project, I also use [Unbound](https://www.nlnetlabs.nl/projects/unbound/about/) for recursive DNS resolution. It supports both DNS-over-TLS and DNS-over-HTTPS for increased security and privacy. This means that I am not subject to a third-party for my DNS resolution, like Cloudflare or Google. One the great things about this is that it doesn't require much more effort or configuration on top of getting Pi-Hole going.
+With this project, I also use [Unbound](https://www.nlnetlabs.nl/projects/unbound/about/) for recursive DNS resolution. It supports both DNS-over-TLS and DNS-over-HTTPS for increased security and privacy. This means that I am not subject to a third-party for my DNS resolution, like Cloudflare or Google. One the great things about this is that it doesn't require much more effort or configuration on top of getting Pi-Hole going. This is an optional step.
   
 </details>
 
