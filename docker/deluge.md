@@ -2,7 +2,7 @@
 title: Deluge VPN
 description: 
 published: true
-date: 2023-06-22T20:14:39.354Z
+date: 2023-06-22T20:15:07.801Z
 tags: docker
 editor: markdown
 dateCreated: 2023-06-19T00:46:35.768Z
@@ -175,7 +175,7 @@ Below are the steps necessary to set up Deluge to connect through the Gluetun VP
 </details>
   
 4. However, since we have told Gluetun to be listening on port `8112`, you need to remove it from the Deluge container's Docker Compose to avoid port conflicts.
-5. Further, you need to also link Deluge to Gluetun's network. So your Docker Compose code should look like the following.
+5. You need to also link Deluge to Gluetun's network. So your Docker Compose code should look like the following.
   
   <details>
   <summary>Docker Compose v2a</summary>
