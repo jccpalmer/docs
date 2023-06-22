@@ -2,7 +2,7 @@
 title: Pi-Hole
 description: 
 published: true
-date: 2023-06-21T19:25:01.412Z
+date: 2023-06-22T19:00:40.537Z
 tags: software, pi-hole, ads
 editor: markdown
 dateCreated: 2023-06-21T11:01:22.038Z
@@ -32,16 +32,12 @@ Please click the below dropdowns to access the section you need.
   
 </details>
 
-<details><summary>Optional: Installing Unbound</summary>
-  
-  **[Installing Unbound](/software/pi-hole/install-unbound):** This final section goes over how to get Unbound configured.
-  
-</details>
-
 <details>
-  <summary>TEST</summary>
+  <summary>Optional: Installing Unbound</summary>
+  
+## Project steps
 
-Below are the steps needed to get Unbound installed and configured.
+Below are the steps needed to get Unbound installed and configured. The full page version may be viewed [here](/software/pi-hole/unbound).
 
 1. Open a terminal on the machine where you installed Pi-Hole, be it locally or over SSH.
 2. For Debian-based distros, input the following command.
