@@ -2,7 +2,7 @@
 title: Deluge VPN
 description: 
 published: true
-date: 2023-06-22T20:03:08.253Z
+date: 2023-06-22T20:05:48.377Z
 tags: docker
 editor: markdown
 dateCreated: 2023-06-19T00:46:35.768Z
@@ -38,7 +38,7 @@ The below preparation will get a NAS server attached to the Docker host that the
 
 ## Prerequisites
 
-- A server, preferably with Debian, Ubuntu, or Alpine Linux installed.
+- A server, preferably with Debian, Ubuntu, or Alpine Linux installed that you are connected to locally or over SSH.
 - Docker and Docker Compose installed. (To avoid adding `sudo`, be sure to add your user to the docker group.)
 - A text editor, such as nano or VSCode connected over SSH.
 - A NAS with samba (SMB) file sharing enabled.
@@ -172,6 +172,7 @@ Below are the steps necessary to set up Deluge to connect through the Gluetun VP
   ```
   
 </details>
+  
 4. However, since we have told Gluetun to be listening on port `8112`, you need to remove it from the Deluge container's Docker Compose.
 5. Further, you need to also link Deluge to Gluetun's network. So your Docker Compose code should look like the following.
   
@@ -202,8 +203,12 @@ Below are the steps necessary to set up Deluge to connect through the Gluetun VP
   ```
   
 </details>
+  
 6. Exit the Docker Compose file, then type the following command.
   	1. `docker compose up -d`
+7. If you go to the web UI at `http://localhost:8112`, you should notice that your IP address in the bottom right corner is different than your public one.
+  
+![deluge-1-1.jpg](/deluge-1-1.jpg)
   
 ### Errors with `network_mode: container`
   
