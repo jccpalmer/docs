@@ -2,7 +2,7 @@
 title: Pi-Hole
 description: 
 published: true
-date: 2023-06-22T19:01:31.833Z
+date: 2023-06-22T19:02:36.149Z
 tags: software, pi-hole, ads
 editor: markdown
 dateCreated: 2023-06-21T11:01:22.038Z
@@ -16,13 +16,30 @@ Please click the below dropdowns to access the section you need.
 
 <details><summary>Overview</summary>
   
-  **[Overview](/software/pi-hole/overview):** This section gives a brief overview of the project.
+[Pi-Hole](https://pi-hole.net) is a popular DNS sinkhole that serves as network-wide ad blocking. It's easy to set up and it works wonders on blocking ads and trackers on your network. It can run on very light hardware, including its namesake, the Raspberry Pi. 
+
+My installation sits in a [Linux Container (LXC)](https://linuxcontainers.org/) on one of my [Proxmox](https://www.proxmox.com/en/) nodes. (Proxmox is the hypervisor that I use on my servers.) An LXC is more lightweight than a full virtual machine, which is how I used to run Pi-Hole when I switched to a full server. 
+
+With this project, I also use [Unbound](https://www.nlnetlabs.nl/projects/unbound/about/) for recursive DNS resolution. It supports both DNS-over-TLS and DNS-over-HTTPS for increased security and privacy. This means that I am not subject to a third-party for my DNS resolution, like Cloudflare or Google. One the great things about this is that it doesn't require much more effort or configuration on top of getting Pi-Hole going.
   
 </details>
 
 <details><summary>Prerequisites and preparation</summary>
   
-  **[Prerequisites and preparation](/software/pi-hole/prereq-prep):** This section details what you will need to get started.
+ ## Prerequisites and preparation
+
+To use Pi-Hole, it is recommended that you have a supported Linux distribution (distro) running. The Pi-Hole project officially supports Raspberry Pi OS, Ubuntu, Debian, Fedora, and CentOS. You can also install Pi-Hole in a Docker container, which is not described here.
+
+Unbound should be available in all distro repositories.
+
+For the sake of this documentation, I will assume that you're using a Debian-based distro. (From the supported list, that would be Debian itself, Ubuntu, and Raspberry Pi OS.)
+
+You will need, at minimum, 2GB of file space (4GB is recommended) and 512MB of RAM. If you want to have internet access with no downtime, you will need a machine that runs 24/7. This could be something as small as a single-board computer (e.g. a Raspberry Pi, Orange Pi, etc.) or a cheap mini PC.
+
+You will also need access to your router's DNS settings if you wish to apply Pi-Hole's ad blocking to your whole network. Please be sure you know how to do this, as it is outside the scope of this to cover every router manufacturer's firmware. (Most router interfaces can be found at `192.168.1.1` in your browser.)
+
+If you can't change your router's DNS settings, you can still use Pi-Hole for ad blocking by changing the DNS settings on your devices. I encourage you to look up how to do that for your device(s) specifically as I will not cover that here.
+
   
 </details>
 
