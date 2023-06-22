@@ -2,7 +2,7 @@
 title: Deluge VPN
 description: 
 published: true
-date: 2023-06-22T19:17:40.739Z
+date: 2023-06-22T19:23:06.779Z
 tags: docker
 editor: markdown
 dateCreated: 2023-06-19T00:46:35.768Z
@@ -32,7 +32,7 @@ This saves a monumental amount of time and it is rather simple to set up. I high
   
 ## Background
 
-This project sees a Deluge container route its traffic through a [Gluetun](/docker/gluetun) container's network. A more thorough write-up is available [here](https://www.jccpalmer.com/homelab/deluge-docker-vpn/).
+This project sees a Deluge container route its traffic through a [Gluetun](/docker/gluetun) container's network. A more thorough write-up is available [here](https://www.jccpalmer.com/blog/deluge-docker-vpn).
 
 The below preparation will get a NAS server attached to the Docker host that the Deluge container can download to.
 
