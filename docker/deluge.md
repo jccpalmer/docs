@@ -2,7 +2,7 @@
 title: Deluge VPN
 description: 
 published: true
-date: 2023-06-22T19:42:26.282Z
+date: 2023-06-22T20:00:45.693Z
 tags: docker
 editor: markdown
 dateCreated: 2023-06-19T00:46:35.768Z
@@ -88,25 +88,32 @@ Below are the steps to get the Deluge container installed. You will be adjusting
 1. Create a YAML file named `docker-compose.yml` in your text editor or IDE of your choice and save it to the directory created in Step 1 in [Preparation](/docker/deluge/prereq-prep). 
     a. In this example, the file is saved under `~/docker/deluge`.
 2. Copy the following code into the blank file. 
-    ```yaml
-        ---
-        version: "2.1"
-        services:
-          deluge:
-            image: lscr.io/linuxserver/deluge:latest
-            container_name: deluge
-            environment:
-              - PUID=1000
-              - PGID=1000
-              - TZ=YOUR_TIMEZONE_HERE (TZ FORMAT)
-            volumes:
-              - /home/USERNAME/docker/deluge/config:/config
-              - /home/USERNAME/downloads:/downloads
-            ports:
-              - 8112:8112
-              - 6881:6881
-              - 6881:6881/udp
-            restart: unless-stopped
+  
+<details>
+  <summary>Docker Compose</summary>
+  
+  ```yaml
+      	---
+      version: "2.1"
+      services:
+        deluge:
+          image: lscr.io/linuxserver/deluge:latest
+          container_name: deluge
+        environment:
+          - PUID=1000
+          - PGID=1000
+          - TZ=YOUR_TIMEZONE_HERE (TZ FORMAT)
+         volumes:
+          - /home/USERNAME/docker/deluge/config:/config
+          - /home/USERNAME/downloads:/downloads
+         ports:
+          - 8112:8112
+          - 6881:6881
+          - 6881:6881/udp
+        restart: unless-stopped
+  ```
+  
+</details>
 
 2. Fill in *YOUR\_TIMEZONE\_HERE* with an appropriate tz database format timezone, which you can find [here](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
 4. Fill in *USERNAME* with your user account's username.
@@ -133,8 +140,106 @@ Below are the steps to get the Deluge container installed. You will be adjusting
 
 <details><summary>Configuring the Deluge VPN</summary>
   
-  **Configuring the Deluge VPN:** This final required section outlines how to configure the Deluge container to route its traffic through Gluetun.
+## Project steps
+
+Below are the steps necessary to set up Deluge to connect through the Gluetun VPN tunnel. The full page version is available here.
+
+1. Navigate to where you saved the Deluge `docker-compose.yml` file.
+	2. In this example, it's under `docker/deluge`.
+3. Your code should look like the following with TZ filled in with your time zone and USERNAME with your account username.
   
+<details>
+  <summary>Docker Compose v1</summary>
+  
+  ```yaml
+      	---
+      version: "2.1"
+      services:
+        deluge:
+          image: lscr.io/linuxserver/deluge:latest
+          container_name: deluge
+        environment:
+          - PUID=1000
+          - PGID=1000
+          - TZ=YOUR_TIMEZONE_HERE (TZ FORMAT)
+         volumes:
+          - /home/USERNAME/docker/deluge/config:/config
+          - /home/USERNAME/downloads:/downloads
+         ports:
+          - 6881:6881
+          - 6881:6881/udp
+        restart: unless-stopped
+  ```
+  
+</details>
+  
+4. However, since we have told Gluetun to be listening on port `8112`, you need to remove it from the Deluge container's Docker Compose.
+5. Further, you need to also link Deluge to Gluetun's network. So your Docker Compose code should look like the following.
+  
+  <details>
+  <summary>Docker Compose v2a</summary>
+  
+  ```yaml
+      	---
+      version: "2.1"
+      services:
+        deluge:
+          image: lscr.io/linuxserver/deluge:latest
+          container_name: deluge
+        environment:
+          - PUID=1000
+          - PGID=1000
+          - TZ=YOUR_TIMEZONE_HERE (TZ FORMAT)
+         volumes:
+          - /home/USERNAME/docker/deluge/config:/config
+          - /home/USERNAME/downloads:/downloads
+         ports:
+          - 8112:8112
+          - 6881:6881
+          - 6881:6881/udp
+        restart: unless-stopped
+        network_mode:
+          container: gluetun
+  ```
+  
+</details>
+6. Exit the Docker Compose file, then type the following command.
+  	1. `docker compose up -d`
+  
+## Errors with `network_mode: container`
+  
+1. The container should start up. If, however, you run into errors, you can shut Deluge down with the following command.
+  	1. `docker compose down`
+2. Open your `docker-compose.yml` file and try changing `network_mode` to `service: gluetun` like the below code.
+  
+<details>
+  <summary>Docker Compose v2b</summary>
+  
+  ```yaml
+      	---
+      version: "2.1"
+      services:
+        deluge:
+          image: lscr.io/linuxserver/deluge:latest
+          container_name: deluge
+        environment:
+          - PUID=1000
+          - PGID=1000
+          - TZ=YOUR_TIMEZONE_HERE (TZ FORMAT)
+         volumes:
+          - /home/USERNAME/docker/deluge/config:/config
+          - /home/USERNAME/downloads:/downloads
+         ports:
+          - 8112:8112
+          - 6881:6881
+          - 6881:6881/udp
+        restart: unless-stopped
+        network_mode:
+          service: gluetun
+  ```
+  
+</details>
+
 </details>
 
 <details><summary>Optional: Using Portainer for installation</summary>
