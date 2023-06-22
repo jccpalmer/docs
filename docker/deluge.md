@@ -2,7 +2,7 @@
 title: Deluge VPN
 description: 
 published: true
-date: 2023-06-22T19:12:34.839Z
+date: 2023-06-22T19:14:55.495Z
 tags: docker
 editor: markdown
 dateCreated: 2023-06-19T00:46:35.768Z
@@ -59,16 +59,16 @@ If the Deluge container goes down, simply navigate to its folder and recreate th
   	1. `mkdir docker/deluge`
 3. Create a config folder on Docker host. (File structure depends on installation and personal preferences.)
     1. `mkdir docker/deluge/config`
-4. Create a downloads folder if one does not already exist.
+4. Create a downloads folder if one does not already exist. (Important for mounting the SMB share properly!)
 	1. `mkdir downloads`
 5. Create a SMB credentials file. 
     1. `nano ~/.smbcredentials`
 6. Insert the following into the blank file, making sure to use your own SMB credentials.  
     1. `username=USERNAME`
     2. `password=PASSWORD`
-7. Set proper permissions for the credentials file. 
+7. Exit the text editor and set proper permissions for the credentials file. 
     1. `chmod 600 ~/.smbcredentials`
-8. Add the SMB share to the /etc/fstab file, appending a new line. 
+8. Add the SMB share to the `/etc/fstab` file, appending a new line. 
     1. `//SERVERIP/SHARENAME /MOUNTPOINT cifs credentials=/home/$USER/.smbcredentials 0 0`
     2. Example: `//192.168.1.100 /home/johnsmith/downloads cifs credentials=/home/johnsmith/.smbcredentials 0 0`
 9. If CIFS-utils is not installed, install it.  
