@@ -2,13 +2,15 @@
 title: About me
 description: 
 published: true
-date: 2023-06-21T19:32:20.886Z
+date: 2024-03-22T16:46:50.319Z
 tags: about
 editor: markdown
 dateCreated: 2023-06-19T01:26:05.389Z
 ---
 
 Welcome to my About Me page! Below you will find various sections outlining who I am, my experience, and my goals. All of this is to help you to get me know me better. My contact info is also included here.
+
+Please note that I am still working on this area, too.
 
 <details><summary>Who am I?</summary>
   
