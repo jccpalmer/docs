@@ -2,7 +2,7 @@
 title: Prerequisites and preparation
 description: 
 published: true
-date: 2023-06-19T00:35:55.145Z
+date: 2024-03-23T18:32:22.714Z
 tags: docker
 editor: markdown
 dateCreated: 2023-06-19T00:35:52.698Z
@@ -23,4 +23,4 @@ Gluetun is a thin, lightweight container written by qdm12 ([GitHub link](https:/
 
 ### Preparation
 
-No preparation needed for this project. Please proceed to the [Installing the Gluetun container](/books/docker/page/installing-the-gluetun-container) document.
+No preparation needed for this project. Please proceed to the [Installing the Gluetun container](https://docs.jccpalmer.com/docker/gluetun/install) document.
