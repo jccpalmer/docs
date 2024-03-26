@@ -1,8 +1,8 @@
 ---
 title: Deluge VPN
-description: 
+description: One of many BitTorrent client options to choose from
 published: true
-date: 2023-06-22T20:35:57.524Z
+date: 2024-03-26T19:16:51.660Z
 tags: docker
 editor: markdown
 dateCreated: 2023-06-19T00:46:35.768Z
