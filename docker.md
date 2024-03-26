@@ -2,7 +2,7 @@
 title: Docker
 description: 
 published: true
-date: 2024-03-26T19:12:14.582Z
+date: 2024-03-26T20:46:08.624Z
 tags: docker
 editor: markdown
 dateCreated: 2023-06-18T20:56:05.958Z
@@ -68,7 +68,7 @@ Note that these are separate from my [software](/software) projects.
 
 <details><summary>Calibre in a Docker container, along with Calibre Web for easier remote interaction and Kobo sync.</summary>
   
-  **[Calibre and Calibre Web]:** This document details how to run Calibre in a Docker container, sync to a NAS for automatic book addition, and set up Calibre Web (including syncing to Kobo).
+  **[Calibre and Calibre Web](/docker/calibre):** This document details how to run Calibre in a Docker container, sync to a NAS for automatic book addition, and set up Calibre Web (including syncing to Kobo).
   
 </details>
 
@@ -76,7 +76,7 @@ Note that these are separate from my [software](/software) projects.
 
 <details><summary>A self-hosted media server; a FOSS alternative to Plex.</summary>
   
-  **[Jellyfin]:** This document goes over how I set up my Jellyfin Docker container that pulls media from my NAS.
+  **[Jellyfin](/docker/jellyfin):** This document goes over how I set up my Jellyfin Docker container that pulls media from my NAS.
   
 </details>
 
@@ -92,7 +92,7 @@ Note that these are separate from my [software](/software) projects.
 
 <details><summary>A completely self-hosted password manager.</summary>
   
-  **[Vaultwarden]:** This document discusses my migration from Enpass to Vaultwarden for password management. It also describes how to set up the Docker container.
+  **[Vaultwarden](/docker/vaultwarden):** This document discusses my migration from Enpass to Vaultwarden for password management. It also describes how to set up the Docker container.
   
 </details>
 
@@ -100,6 +100,6 @@ Note that these are separate from my [software](/software) projects.
 
 <details><summary>A self-hosted dashboard for local and public services.</summary>
   
-  **[Homer]:** This document describes how to set up a self-hosted dashboard using a Homer Docker container.
+  **[Homer](/docker/homer):** This document describes how to set up a self-hosted dashboard using a Homer Docker container.
   
 </details>
