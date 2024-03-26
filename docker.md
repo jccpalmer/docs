@@ -2,7 +2,7 @@
 title: Docker
 description: 
 published: true
-date: 2023-06-22T20:11:30.053Z
+date: 2024-03-26T18:57:14.626Z
 tags: docker
 editor: markdown
 dateCreated: 2023-06-18T20:56:05.958Z
@@ -71,6 +71,14 @@ Note that these are separate from my [software](/software) projects.
   **[Jellyfin]:** This document goes over how I set up my Jellyfin Docker container that pulls media from my NAS.
   
 </details>
+
+## Audiobookshelf
+
+<details><summary>A self-hosted audiobook server.</summary>
+  
+  **[Audiobookshelf]:** This document details how I set up my Audiobookshelf Docker container that, much like Jellyfin, pulls data from my NAS and serves up my audiobooks for consumption better than any other service I could find.
+  
+  </details>
 
 ## Vaultwarden migration
 
