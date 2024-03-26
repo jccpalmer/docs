@@ -2,7 +2,7 @@
 title: Docker
 description: 
 published: true
-date: 2024-03-26T19:05:18.891Z
+date: 2024-03-26T19:12:14.582Z
 tags: docker
 editor: markdown
 dateCreated: 2023-06-18T20:56:05.958Z
@@ -60,6 +60,8 @@ Note that these are separate from my [software](/software) projects.
 
 <details><summary>A Docker container to manage Nginx proxies with a GUI, Let's Encrypt, and more.</summary>
   
+  **[Nginx Proxy Manager](/docker/npm):** This document gives an overview of how to set up Nginx Proxy Manager to expose your services safely behind proxies. It will also show how to set up Let's Encrypt for SSL.
+  
   </details>
 
 ## Calibre & Calibre Web
@@ -82,7 +84,7 @@ Note that these are separate from my [software](/software) projects.
 
 <details><summary>A self-hosted audiobook server.</summary>
   
-  **[Audiobookshelf]:** This document details how I set up my Audiobookshelf Docker container that, much like Jellyfin, pulls data from my NAS and serves up my audiobooks for consumption better than any other service I could find.
+  **[Audiobookshelf](/docker/audiobookshelf):** This document details how I set up my Audiobookshelf Docker container that, much like Jellyfin, pulls data from my NAS and serves up my audiobooks for consumption better than any other service I could find.
   
   </details>
 
