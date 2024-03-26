@@ -2,7 +2,7 @@
 title: Docker
 description: 
 published: true
-date: 2024-03-26T18:57:14.626Z
+date: 2024-03-26T19:05:18.891Z
 tags: docker
 editor: markdown
 dateCreated: 2023-06-18T20:56:05.958Z
@@ -55,6 +55,12 @@ Note that these are separate from my [software](/software) projects.
   **[Self-hosted gateway](/docker/self-hosted-gateway):** This document details how to set up a self-hosted gateway to safely expose your services to the internet without opening ports 80 and 443 on your home network.
   
 </details>
+
+## Nginx Proxy Manager
+
+<details><summary>A Docker container to manage Nginx proxies with a GUI, Let's Encrypt, and more.</summary>
+  
+  </details>
 
 ## Calibre & Calibre Web
 
