@@ -2,7 +2,7 @@
 title: About me
 description: 
 published: true
-date: 2024-03-22T16:46:50.319Z
+date: 2024-03-26T20:54:37.813Z
 tags: about
 editor: markdown
 dateCreated: 2023-06-19T01:26:05.389Z
@@ -36,12 +36,12 @@ Please feel free to reach out with questions. [Email](mailto:contact@jccpalmer.c
 
 <details><summary>My goals</summary>
   
-  **My goals:** Here, I talk about my short-, mid-, and long-term goals when it comes to my career.
+  **[My goals](/about-me/goals):** Here, I talk about my short-, mid-, and long-term goals when it comes to my career.
   
 </details>
 
 <details><summary>My interests</summary>
   
-  **My interests:** Finally, I use this section to briefly talk about my interests from F(L)OSS to woodworking.
+  **[My interests](/about-me/interests):** Finally, I use this section to briefly talk about my interests from FOSS to woodworking.
   
 </details>
