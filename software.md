@@ -2,7 +2,7 @@
 title: Software
 description: 
 published: true
-date: 2023-06-20T00:53:02.967Z
+date: 2024-03-26T20:49:55.074Z
 tags: software
 editor: markdown
 dateCreated: 2023-06-20T00:39:46.020Z
@@ -16,15 +16,15 @@ Here is where you'll find all documentation for my software projects. Note that 
 
 <details><summary>All of my Home Assistant projects</summary>
   
-  **[Home Assistant]:** This document details all of my Home Assistant projects that I've worked on. For now, it's just my dashboards.
+  **[Home Assistant](/software/home-assistant):** This document details all of my Home Assistant projects that I've worked on. For now, it's just my dashboards.
   
 </details>
 
-## macOS virtual machine
+## Pi-hole
 
-<details><summary>Setting up a macOS virtual machine in Proxmox</summary>
+<details><summary>Setting up a Pi-hole ad blocker</summary>
   
-  **[macOS virtual machine](/software/macos):** This document outlines how I built a macOS virtual machine inside of Proxmox.
+  **[Pi-hole](/software/pi-hole):** This document outlines how to build a Pi-hole ad blocker.
   
 </details>
 
