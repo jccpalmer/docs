@@ -2,7 +2,7 @@
 title: About me
 description: 
 published: true
-date: 2024-03-26T20:54:37.813Z
+date: 2024-03-27T12:14:57.848Z
 tags: about
 editor: markdown
 dateCreated: 2023-06-19T01:26:05.389Z
@@ -30,7 +30,7 @@ Please feel free to reach out with questions. [Email](mailto:contact@jccpalmer.c
 
 <details><summary>My experience</summary>
   
-  **[My experience](/about-me/experience):** Here is where I outline my experience in writing. I'm coming up on twelve years!
+  **[My experience](/about-me/experience):** Here is where I outline my experience in writing. Over twelve years and counting!
   
 </details>
 
