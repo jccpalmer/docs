@@ -2,7 +2,7 @@
 title: About me
 description: 
 published: true
-date: 2024-03-27T12:14:57.848Z
+date: 2024-03-27T12:16:07.383Z
 tags: about
 editor: markdown
 dateCreated: 2023-06-19T01:26:05.389Z
@@ -14,7 +14,7 @@ Please note that I am still working on this area, too.
 
 <details><summary>Who am I?</summary>
   
-  Hi there. My name is JC Palmer. I'm a writer with over eleven years of combined experience in journalism, technical writing, copy and content editing, and proposal writing. Wherever I go, I bring a strong understanding of the English language, user empathy, and limitless desire to learn. I quickly and enthusiastically absorb knowledge, especially anything relating to technology.
+  Hi there. My name is JC Palmer. I'm a writer with over twelve years of combined experience in journalism, technical writing and editing, and copy and content editing. Wherever I go, I bring a strong understanding of the English language, user empathy, and limitless desire to learn. I quickly and enthusiastically absorb knowledge, especially anything relating to technology.
 
 I don't stop until a project is done, then I start looking for the next thing. I excel at interviewing users to find pain points, and I know how to bridge the gap between developer and stakeholder. I am a novice coder, but I have started learning Python to get a headstart on learning topics such as machine learning and data analysis.
 
