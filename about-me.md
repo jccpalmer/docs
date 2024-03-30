@@ -2,7 +2,7 @@
 title: About me
 description: 
 published: true
-date: 2024-03-27T12:16:57.197Z
+date: 2024-03-30T19:38:43.137Z
 tags: about
 editor: markdown
 dateCreated: 2023-06-19T01:26:05.389Z
@@ -42,6 +42,6 @@ Please feel free to reach out with questions. [Email](mailto:contact@jccpalmer.c
 
 <details><summary>My interests</summary>
   
-  **[My interests](/about-me/interests):** Finally, I use this section to briefly talk about my interests, from FOSS to mechanical keyboards and woodworking.
+  **[My interests](/about-me/interests):** Finally, I use this section to talk about my interests, from FOSS and woodworking.
   
 </details>
