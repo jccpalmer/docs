@@ -2,7 +2,7 @@
 title: Wiki.js
 description: 
 published: true
-date: 2024-04-01T15:46:03.368Z
+date: 2024-04-01T16:03:37.234Z
 tags: docker, wiki
 editor: markdown
 dateCreated: 2023-06-19T21:02:08.983Z
@@ -20,7 +20,7 @@ This document details how I migrated this documentation portfolio from Bookstack
 
 <details><summary>Prerequisites and preparation</summary>
   
-  **Prerequisites and preparation:** This section outlines what you'll need to get started running your own Wiki.js site.
+  **[Prerequisites and preparation](/docker/wiki-js/prereq-prep):** This section outlines what you'll need to get started running your own Wiki.js site.
   
 </details>
 
