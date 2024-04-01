@@ -2,7 +2,7 @@
 title: About me
 description: 
 published: true
-date: 2024-03-30T19:38:59.581Z
+date: 2024-04-01T17:17:30.441Z
 tags: about
 editor: markdown
 dateCreated: 2023-06-19T01:26:05.389Z
@@ -10,7 +10,7 @@ dateCreated: 2023-06-19T01:26:05.389Z
 
 Welcome to my About Me page! Below you will find various sections outlining who I am, my experience, and my goals. All of this is to help you to get me know me better. My contact info is also included here.
 
-Please note that I am still working on this area, too.
+## About me
 
 <details><summary>Who am I?</summary>
   
@@ -28,20 +28,14 @@ Please feel free to reach out with questions. [Email](mailto:contact@jccpalmer.c
   
 </details>
 
-<details><summary>My experience</summary>
+## Experience
   
-  **[My experience](/about-me/experience):** Here is where I outline my experience in writing. Over twelve years and counting!
-  
-</details>
+**[My experience](/about-me/experience):** Here is where I outline my experience in writing. Over twelve years and counting!
 
-<details><summary>My goals</summary>
+## Goals
   
-  **[My goals](/about-me/goals):** Here, I talk about my short-, mid-, and long-term goals when it comes to my career.
-  
-</details>
+**[My goals](/about-me/goals):** Here, I talk about my short-, mid-, and long-term goals when it comes to my career.
 
-<details><summary>My interests</summary>
+## Interests
   
-  **[My interests](/about-me/interests):** Finally, I use this section to talk about my interests, from FOSS to woodworking.
-  
-</details>
+**[My interests](/about-me/interests):** Finally, I use this section to talk about my interests, from FOSS to woodworking.
