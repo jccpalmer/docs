@@ -2,11 +2,15 @@
 title: Overview
 description: 
 published: true
-date: 2023-06-19T00:55:42.307Z
+date: 2024-04-01T16:44:02.841Z
 tags: docker, deluge, vpn
 editor: markdown
 dateCreated: 2023-06-19T00:55:39.821Z
 ---
+
+## Background
+
+This project sees a Deluge container route its traffic through a [Gluetun](/docker/gluetun) container's network. A more thorough write-up is available [here](https://www.jccpalmer.com/blog/deluge-docker-vpn).
 
 I set out on this project to create a [Deluge](https://deluge-torrent.org) container that would route through a virtual private network (VPN) and download files to my Network Attached Storage (NAS) server over the [Network File System (NFS)](https://en.wikipedia.org/wiki/Network_File_System) or [Samba (SMB)](https://en.wikipedia.org/wiki/Samba_(software)) protocols, which I would then sort through manually depending on the file type. Or, I would let Deluge continue to seed the file nested behind a VPN. 
 
