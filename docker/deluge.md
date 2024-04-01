@@ -2,7 +2,7 @@
 title: Deluge VPN
 description: One of several BitTorrent clients but masked behind a VPN
 published: true
-date: 2024-04-01T17:13:37.470Z
+date: 2024-04-01T17:13:56.762Z
 tags: docker
 editor: markdown
 dateCreated: 2023-06-19T00:46:35.768Z
@@ -11,8 +11,6 @@ dateCreated: 2023-06-19T00:46:35.768Z
 # Project scope
 
 This document describes how to create a Deluge Docker container with traffic that routes through the Gluetun VPN tunnel described in the [Gluetun VPN tunnel](/docker/gluetun) document. This will also show how to have Deluge download files to a NAS via an SMB share.
-
-Please click the dropdowns below to access the section you need.
 
 ## Background
   
