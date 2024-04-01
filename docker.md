@@ -2,7 +2,7 @@
 title: Docker
 description: 
 published: true
-date: 2024-03-26T20:46:08.624Z
+date: 2024-04-01T17:26:26.493Z
 tags: docker
 editor: markdown
 dateCreated: 2023-06-18T20:56:05.958Z
@@ -13,14 +13,6 @@ dateCreated: 2023-06-18T20:56:05.958Z
 This section houses all documentation related to my self-hosted Docker container projects in my homelab. I run everything in a Debian virtual machine on a Proxmox server. This area is by far what I spend most of my time on. Full write-ups for these projects can be found on my [blog](https://www.jccpalmer.com/blog).
 
 Note that these are separate from my [software](/software) projects.
-
-## Wiki.js
-
-<details><summary>The platform for this documentation portfolio.</summary>
-  
-**[Wiki.js](/docker/wiki-js):** This document details how to set up Wiki.js for your own documentation portfolio, as well as my migration from Bookstack.
-
-</details>
 
 ## Grav
 
