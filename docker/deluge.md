@@ -1,8 +1,8 @@
 ---
 title: Deluge VPN
-description: One of many BitTorrent client options to choose from
+description: One of several BitTorrent clients but masked behind a VPN
 published: true
-date: 2024-04-01T16:57:49.006Z
+date: 2024-04-01T17:00:25.502Z
 tags: docker
 editor: markdown
 dateCreated: 2023-06-19T00:46:35.768Z
