@@ -2,7 +2,7 @@
 title: Deluge VPN
 description: One of several BitTorrent clients but masked behind a VPN
 published: true
-date: 2024-04-01T17:00:25.502Z
+date: 2024-04-01T17:01:34.066Z
 tags: docker
 editor: markdown
 dateCreated: 2023-06-19T00:46:35.768Z
@@ -35,17 +35,5 @@ Please click the dropdowns below to access the section you need.
 <details><summary>Configuring the Deluge VPN</summary>
   
 **[Configuring the Deluge VPN](/docker/deluge/config-vpn):** This document outlines what you need to do to hook up Deluge to the Gluetun VPN tunnel. If you haven't built your Gluetun container and tunnel yet, please go do that now.
-  
-</details>
-
-<details><summary>Optional: Using Portainer for installation</summary>
-  
-  *Using Portainer for installation:** In this optional section, I'll walk you through how to do this process in the Portainer GUI application.
-  
-</details>
-
-<details><summary>Optional: Using the thin client application</summary>
-  
-  **Using the thin client application:** This optional section briefly goes over how to use the Deluge desktop application as a thin client.
   
 </details>
