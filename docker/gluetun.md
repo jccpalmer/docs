@@ -1,8 +1,8 @@
 ---
 title: Gluetun VPN tunnel
-description: 
+description: Mask any container's traffic behind a VPN
 published: true
-date: 2023-06-21T13:35:24.889Z
+date: 2024-04-01T17:05:16.893Z
 tags: docker
 editor: markdown
 dateCreated: 2023-06-18T21:04:27.104Z
