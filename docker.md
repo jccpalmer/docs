@@ -2,7 +2,7 @@
 title: Docker
 description: 
 published: true
-date: 2024-04-01T17:26:26.493Z
+date: 2024-04-01T17:26:45.913Z
 tags: docker
 editor: markdown
 dateCreated: 2023-06-18T20:56:05.958Z
@@ -16,7 +16,7 @@ Note that these are separate from my [software](/software) projects.
 
 ## Grav
 
-<details><summary>The CMS that my website is based on.</summary>
+<details><summary>My website's CMS.</summary>
   
   **[Grav](/docker/grav):** This document outlines how I set up Grav, a lightweight CMS for my website.
   
