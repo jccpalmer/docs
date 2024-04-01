@@ -2,7 +2,7 @@
 title: Deluge VPN
 description: One of many BitTorrent client options to choose from
 published: true
-date: 2024-04-01T16:45:24.432Z
+date: 2024-04-01T16:47:31.329Z
 tags: docker
 editor: markdown
 dateCreated: 2023-06-19T00:46:35.768Z
@@ -21,53 +21,7 @@ Please click the dropdowns below to access the section you need.
 
 <details><summary>Prerequisites and preparation</summary>
   
-## Background
-
-This project sees a Deluge container route its traffic through a [Gluetun](/docker/gluetun) container's network. A more thorough write-up is available [here](https://www.jccpalmer.com/blog/deluge-docker-vpn).
-
-The below preparation will get a NAS server attached to the Docker host that the Deluge container can download to.
-
-## Prerequisites
-
-- A server, preferably with Debian, Ubuntu, or Alpine Linux installed that you are connected to locally or over SSH.
-- Docker and Docker Compose installed. (To avoid adding `sudo`, be sure to add your user to the docker group.)
-- A text editor, such as nano or VSCode connected over SSH.
-- A NAS with samba (SMB) file sharing enabled.
-- An empty mount point for the SMB file share (e.g. `/mnt` or `~/downloads`).
-- A knowledge of navigating a Linux filesystem.
-
-## Limitations
-
-This project has one notable limitation. If you use the Watchtower container to keep your other containers up-to-date, you will need to recreate the Deluge container every time Gluetun gets an update. This can happen frequently as, at time of writing, Gluetun is under active development. To avoid this issue, do not use Watchtower, but that would require manual Gluetun updating.
-
-If the Deluge container goes down, simply navigate to its folder and recreate the container with the same Docker Compose command you will see later in these instructions.
-
-## Preparation
-
-1. Create a Docker folder.
-  	1. `mkdir docker`
-2. Create a Deluge folder inside the Docker one you just created.
-  	1. `mkdir docker/deluge`
-3. Create a config folder on Docker host. (File structure depends on installation and personal preferences.)
-    1. `mkdir docker/deluge/config`
-4. Create a downloads folder if one does not already exist. (Important for mounting the SMB share properly!)
-	1. `mkdir downloads`
-5. Create a SMB credentials file. 
-    1. `nano ~/.smbcredentials`
-6. Insert the following into the blank file, making sure to use your own SMB credentials.  
-    1. `username=USERNAME`
-    2. `password=PASSWORD`
-7. Exit the text editor and set proper permissions for the credentials file. 
-    1. `chmod 600 ~/.smbcredentials`
-8. Add the SMB share to the `/etc/fstab` file, appending a new line. 
-    1. `//SERVERIP/SHARENAME /MOUNTPOINT cifs credentials=/home/$USER/.smbcredentials 0 0`
-    2. Example: `//192.168.1.100 /home/johnsmith/downloads cifs credentials=/home/johnsmith/.smbcredentials 0 0`
-9. If CIFS-utils is not installed, install it.  
-    1. If on Debian/Ubuntu: `sudo apt install cifs-utils`
-    2. If on Alpine: `sudo apk add cifs-utils`
-10. Mount the SMB share. 
-    1. `sudo mount -a`
-  
+**[Prerequisites and preparation](/docker/deluge/prereq-prep):** This section addresses what you need to get started with installing the Deluge container, including a limitation with this project.  
 </details>
 
 <details><summary>Installing the Deluge container</summary>
