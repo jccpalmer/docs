@@ -2,7 +2,7 @@
 title: Gluetun VPN tunnel
 description: Mask any container's traffic behind a VPN
 published: true
-date: 2024-04-01T17:05:16.893Z
+date: 2024-04-01T17:06:19.792Z
 tags: docker
 editor: markdown
 dateCreated: 2023-06-18T21:04:27.104Z
@@ -14,17 +14,23 @@ This document describes how to set up a Gluetun VPN tunnel Docker container thro
 
 Please click the dropdowns below to view the different sections of this document.
 
+### BAckgro
+
 <details><summary>Overview</summary>
   
   **[Overview](/docker/gluetun/overview):** This section goes over the project's purpose and scope, as well as what inspired me to do it.
   
 </details>
+
+### Prerequisites and preparation
   
 <details><summary>Prerequisites and preparation</summary>
   
   **[Prerequisites and preparation](/docker/gluetun/prereq-prep):** This section outlines everything you'll need to get started and how to do so.
   
 </details>
+
+### Installation
 
 <details><summary>Installing the Gluetun container</summary>
   
