@@ -2,13 +2,13 @@
 title: Overview
 description: 
 published: true
-date: 2024-03-23T18:31:39.181Z
+date: 2024-04-01T17:09:36.202Z
 tags: docker
 editor: markdown
 dateCreated: 2023-06-19T00:24:29.402Z
 ---
 
-The goal of this project was to create a secure way to route traffic for some of my internet-facing Docker containers. I discovered the project via a YouTube video and dove right in. I use Proton VPN, a provider that makes it easy to get my sign-in credentails for the [OpenVPN](https://protonvpn.com/support/vpn-config-download/) and [Wireguard](https://protonvpn.com/support/wireguard-configurations/) protocols. (Instructions to acquire such files for Proton VPN linked.) 
+The goal of this project was to create a secure way to route traffic for some of my internet-facing Docker containers. I discovered the project via a YouTube video and dove right in. I use Proton VPN, a provider that makes it easy to get my sign-in credentails for the [OpenVPN](https://protonvpn.com/support/vpn-config-download/) and [Wireguard](https://protonvpn.com/support/wireguard-configurations/) protocols. 
 
 Gluetun uses the [OpenVPN protocol](https://openvpn.net/community-resources/openvpn-protocol/), which works well enough for my homelab purposes. [Wireguard](https://www.wireguard.com/) is newer and more efficient, often resulting in higher throughputs. OpenVPN is also locked to one server, so when you download your OpenVPN configuration information, you'll need to pick the best server for you. If your VPN provider supports Wireguard, Gluetun also supports it.
 
