@@ -2,7 +2,7 @@
 title: Wiki.js
 description: 
 published: true
-date: 2023-06-20T01:05:27.087Z
+date: 2024-04-01T15:46:03.368Z
 tags: docker, wiki
 editor: markdown
 dateCreated: 2023-06-19T21:02:08.983Z
@@ -14,7 +14,7 @@ This document details how I migrated this documentation portfolio from Bookstack
 
 <details><summary>Overview</summary>
   
-  **Overview:** This section goes over the project at large. If you're curious about my thoughts of Wiki.js versus Bookstack, you should start here.
+  **[Overview](/docker/wiki-js/overview):** This section goes over the project at large. If you're curious about my thoughts of Wiki.js versus Bookstack, you should start here.
   
 </details>
 
