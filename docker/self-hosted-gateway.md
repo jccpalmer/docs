@@ -2,7 +2,7 @@
 title: Self-hosted gateway
 description: 
 published: true
-date: 2023-06-19T19:32:53.586Z
+date: 2024-04-03T14:50:02.692Z
 tags: gateway
 editor: markdown
 dateCreated: 2023-06-19T19:04:00.631Z
@@ -14,32 +14,18 @@ This is document describes a project where I sought an alternative to Cloudflare
 
 Please click on the dropdowns below to access the section you'd like.
 
-<details><summary>Overview</summary>
-  
-  **[Overview](/docker/self-hosted-gateway/overview):** This section details what the project is about, how I discovered it, and everything else you might need to know.
-  
-</details>
+## Background
 
-<details><summary>Prerequisites and preparation</summary>
+**[Overview](/docker/self-hosted-gateway/overview):** This section details what the project is about, how I discovered it, and everything else you might need to know.
   
-  **[Prerequisites and preparation](docker/self-hosted-gateway/prereq-prep):** This section goes over what you need to get started and how to do so.
-  
-</details>
+## Getting started
 
-<details><summary>Building the gateway</summary>
-  
-  **[Building the gateway](docker/self-hosted-gateway/building-gateway):** This section outlines the first part of the project: building the gateway.
-  
-</details>
+**[Prerequisites and preparation](docker/self-hosted-gateway/prereq-prep):** This section goes over what you need to get started and how to do so.
 
-<details><summary>Building the link</summary>
-  
-  **[Building the link](/docker/self-hosted-gateway/building-link):** This final required section details how to connect your service (link) to the gateway.
-  
-</details>
+## Installation
 
-<details><summary>Optional: Using Portainer to link networks</summary>
+**[Building the gateway](docker/self-hosted-gateway/building-gateway):** This section outlines the first part of the project: building the gateway.
   
-  **[Using Portainer to link networks](/docker/self-hosted-gateway/portainer-link-network):** This optional section goes over how to use Portainer to link existing containers to the link's network.
+**[Building the link](/docker/self-hosted-gateway/building-link):** This final required section details how to connect your service (link) to the gateway.
   
-</details>
+**[Using Portainer to link networks](/docker/self-hosted-gateway/portainer-link-network):** This optional section goes over how to use Portainer to link existing containers to the link's network.
