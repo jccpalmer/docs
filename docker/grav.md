@@ -1,8 +1,8 @@
 ---
 title: Grav
-description: 
+description: An open-source flat file CMS
 published: true
-date: 2024-04-03T13:32:21.980Z
+date: 2024-04-03T13:35:39.776Z
 tags: docker, cms, website
 editor: markdown
 dateCreated: 2023-06-20T00:45:27.653Z
