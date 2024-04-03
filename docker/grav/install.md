@@ -2,7 +2,7 @@
 title: Installing the Grav container
 description: Here's how to install Grav
 published: true
-date: 2024-04-03T14:36:15.792Z
+date: 2024-04-03T14:36:55.458Z
 tags: docker
 editor: markdown
 dateCreated: 2024-04-03T13:32:07.848Z
@@ -10,7 +10,7 @@ dateCreated: 2024-04-03T13:32:07.848Z
 
 ## Installation
 
-We'll be using Docker Compose for this installation, so in your terminal, head over to the Grav directory you created in the [Prerequistes and preparation](/docker/grav/rereq-prep) document. I'll be using `nano` below, so if you're using a different text editor, substitute in your commands appropriately.
+We'll be using Docker Compose for this installation, so in your terminal, head over to the Grav directory you created in the [Prerequistes and preparation](/docker/grav/prereq-prep) document. I'll be using `nano` below, so if you're using a different text editor, substitute in your commands appropriately.
 
 1. Create a new `docker-compose.yml` file in the root of the Grav directory, which in this example is `~/docker/grav`.
 	1. `nano docker-compose.yml`
