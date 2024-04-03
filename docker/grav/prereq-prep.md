@@ -2,7 +2,7 @@
 title: Prerequisites and preparation
 description: What you'll need to get started with Grav
 published: true
-date: 2024-04-03T14:17:51.635Z
+date: 2024-04-03T14:18:08.544Z
 tags: docker
 editor: markdown
 dateCreated: 2024-04-03T13:30:13.780Z
@@ -24,4 +24,4 @@ dateCreated: 2024-04-03T13:30:13.780Z
 4. Make a `config` folder inside the Grav directory.
 	1. `mkdir docker/grav/config`
 
-There is no additional preparation needed for this project. Please head over to the [Installing the Grav container](/docker/grav/install) document for the next steps.
+You do not need any additional preparation needed for this project. Please head over to the [Installing the Grav container](/docker/grav/install) document for the next steps.
