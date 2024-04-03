@@ -2,7 +2,7 @@
 title: Grav
 description: An open-source flat file CMS
 published: true
-date: 2024-04-03T13:35:39.776Z
+date: 2024-04-03T14:42:11.786Z
 tags: docker, cms, website
 editor: markdown
 dateCreated: 2023-06-20T00:45:27.653Z
@@ -22,4 +22,4 @@ This project revolves around my main website and its content management system (
 
 ## Installation
 
-[Installing the Grav container](/docker/grav/install): Here's where you'll find the instructions to install the Grav Docker container.
+[Installing the Grav container](/docker/grav/install): Here's where you'll find the instructions on how to install the Grav Docker container.
