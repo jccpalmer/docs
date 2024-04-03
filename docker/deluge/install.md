@@ -2,7 +2,7 @@
 title: Installing the Deluge container
 description: 
 published: true
-date: 2023-06-19T01:09:15.306Z
+date: 2024-04-03T14:27:32.666Z
 tags: docker, deluge, vpn
 editor: markdown
 dateCreated: 2023-06-19T01:01:02.777Z
@@ -33,7 +33,7 @@ This page assumes that you have Docker Compose installed.
               - 6881:6881/udp
             restart: unless-stopped
 
-2. Fill in *YOUR\_TIMEZONE\_HERE* with an appropriate tz database format timezone, which you can find [here](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
+2. Fill in *YOUR\_TIMEZONE\_HERE* with an appropriate tz database format timezone, which you can find [listed on Wikipedia](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
 4. Fill in *USERNAME* with your user account's username.
 5. Save the file, naming it `docker-compose.yml`. 
 6. Navigate to the deluge container folder where you saved docker-compose.yml.
