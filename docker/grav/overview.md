@@ -2,13 +2,11 @@
 title: Overview
 description: An overview for the Grav project
 published: true
-date: 2024-04-03T13:28:35.015Z
+date: 2024-04-03T13:30:31.252Z
 tags: docker
 editor: markdown
 dateCreated: 2024-04-03T13:28:35.015Z
 ---
-
-# Overview
 
 [Grav](https://getgrav.org) is an open-source flat file content management system (CMS), also known as the backend of a website. It serves as the administration section of my [website](https://www.jccpalmer.com), running in a Docker container.
 
