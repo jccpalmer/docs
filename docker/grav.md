@@ -2,7 +2,7 @@
 title: Grav
 description: 
 published: true
-date: 2024-04-03T13:27:20.961Z
+date: 2024-04-03T13:32:21.980Z
 tags: docker, cms, website
 editor: markdown
 dateCreated: 2023-06-20T00:45:27.653Z
@@ -22,4 +22,4 @@ This project revolves around my main website and its content management system (
 
 ## Installation
 
-[Installing the Grav Docker container](/docker/grav/install): Here's where you'll find the instructions to install the Grav Docker container.
+[Installing the Grav container](/docker/grav/install): Here's where you'll find the instructions to install the Grav Docker container.
