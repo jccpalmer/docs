@@ -2,7 +2,7 @@
 title: Self-hosted gateway
 description: An alternative to Cloudflare Tunnels
 published: true
-date: 2024-04-03T14:51:43.006Z
+date: 2024-04-04T12:50:22.059Z
 tags: docker
 editor: markdown
 dateCreated: 2023-06-19T19:04:00.631Z
@@ -11,8 +11,6 @@ dateCreated: 2023-06-19T19:04:00.631Z
 # Project scope
 
 This is document describes a project where I sought an alternative to Cloudflare Tunnels. It's still a work-in-progress as I only have one service tunneled.
-
-Please click on the dropdowns below to access the section you'd like.
 
 ## Background
 
