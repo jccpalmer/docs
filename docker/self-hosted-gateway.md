@@ -1,8 +1,8 @@
 ---
-title: Self-hosted gateway
+title: Self-Hosted Gateway
 description: An alternative to Cloudflare Tunnels
 published: true
-date: 2024-04-04T12:50:22.059Z
+date: 2024-04-04T12:55:00.672Z
 tags: docker
 editor: markdown
 dateCreated: 2023-06-19T19:04:00.631Z
