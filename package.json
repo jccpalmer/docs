@@ -9,7 +9,7 @@
     "deploy": "astro deploy"
   },
   "dependencies": {
-    "astro": "^1.0.0."
+    "astro": "^1.0.0"
   },
   "repository": {
     "type": "git",
