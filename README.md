@@ -8,6 +8,6 @@ If you've landed here from my main [website](https://www.jccpalmer.com), then he
 
 If you came here directly, you are likely interested in viewing my portfolio. Thank you for stopping by. Please be aware that, at this time, I am still working on this site.
 
-Regardless, feel free to browse around and check out what I have here via the navigation menu on the left. If you've come here directly, then I encourage you to check out my [About Me](/about-me) page to learn more about who I am.
+Regardless, feel free to browse around and check out what I have here via the navigation menu on the left. If you've come here directly, then I encourage you to check out my [About me](About/about-me.md) page to learn more about who I am.
 
 This portfolio is broken up into three main sections: Docker, Hardware, and Software.
