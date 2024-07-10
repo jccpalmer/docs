@@ -1,4 +1,4 @@
-# Project scope
+# Pi-hole
 
 This document describes how to set up Pi-hole for network-wide ad blocking. It also includes optional steps for setting up Unbound for recursive DNS resolution in case you don't want to use a third-party DNS resolver like Google or Cloudflare.
 
