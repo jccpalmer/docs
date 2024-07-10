@@ -1,10 +1,10 @@
 {
-  "name": "jordan",
+  "name": "astro",
   "version": "1.0.0",
-  "description": "",
+  "description": "Astro",
   "main": "index.js",
   "scripts": {
-    "build": "astro build",
+    "build": "astro build", 
     "start": "astro dev",
     "deploy": "astro deploy"
   },
@@ -16,7 +16,7 @@
     "url": "git+https://github.com/jccpalmer/docs.git"
   },
   "author": "JC Palmer",
-  "license": "GPL-3.0",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/jccpalmer/docs/issues"
   },
