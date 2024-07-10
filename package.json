@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "astro": "^1.0.0."
-  }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jccpalmer/docs.git"
