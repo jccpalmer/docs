@@ -2,17 +2,15 @@
 title: Deluge VPN
 ---
 
-# Deluge VPN
+import { Steps } from '@astrojs/starlight/components';
 
-## Overview
-
-### Background
+## Background
 
 This project sees a Deluge container route its traffic through a [Gluetun](/docker/gluetun) container's network. A more thorough write-up is available [here](https://www.jccpalmer.com/blog/deluge-docker-vpn).
 
 I set out on this project to create a [Deluge](https://deluge-torrent.org) container that would route through a virtual private network (VPN) and download files to my Network Attached Storage (NAS) server over the [Network File System (NFS)](https://en.wikipedia.org/wiki/Network_File_System) or [Samba (SMB)](https://en.wikipedia.org/wiki/Samba_(software)) protocols, which I would then sort through manually depending on the file type. Or, I would let Deluge continue to seed the file nested behind a VPN. 
 
-This project requires the use of Gluetun, the details for which you can find in my [Gluetun documentation](https://docs.jccpalmer.com/books/docker/chapter/gluetun-vpn-tunnel) chapter.
+This project requires the use of Gluetun, the details for which you can find in my [Gluetun documentation](gluetun/gluetun).
 
 Essentially, the way this works is that the Deluge Docker container is networked to the Gluetun container. This is done by having Gluetun handle Deluge's port configuraiton (default is port `8112`), which works because Deluge is networked to it. So when you go to `http://SERVERIP:8112`, you get the Deluge web UI with a different IP address than your public one.
 
@@ -33,11 +31,13 @@ This saves a monumental amount of time and it is rather simple to set up. I high
 
 ### Limitations
 
-This project has one notable limitation. If you use the Watchtower container to keep your other containers up-to-date, you will need to recreate the Deluge container every time Gluetun gets an update. This can happen frequently as, at time of writing, Gluetun is under active development. To avoid this issue, do not use Watchtower, but that would require manual Gluetun updating.
+This project has one notable limitation. If you use the Watchtower container to keep your other containers up-to-date, you will need to recreate the Deluge container every time Gluetun gets an update. To avoid this issue, do not use Watchtower, but that would require manual Gluetun updating.
 
 If the Deluge container goes down, simply navigate to its folder and recreate the container with the same Docker Compose command you will see later in these instructions.
 
 ### Preparation
+
+<Steps>
 
 1. Create a Docker folder.
   	1. `mkdir docker`
@@ -63,16 +63,20 @@ If the Deluge container goes down, simply navigate to its folder and recreate th
 10. Mount the SMB share. 
     1. `sudo mount -a`
 
+</Steps>
+
 ## Installing Deluge
 
 ### Project steps
 
 Below are the steps to get the Deluge container installed. You will be adjusting this later, but this section is to help you get going. The full page version is available [here](/docker/deluge/install).
 
-1. Create a YAML file named `docker-compose.yml` in your text editor or IDE of your choice and save it to the directory created in Step 1 in [Preparation](/docker/deluge/prereq-prep). 
+<Steps>
+
+1. Create a YAML file named `docker-compose.yml` in your text editor or IDE of your choice and save it to the directory created in Step 1 in Preparation. 
     a. In this example, the file is saved under `~/docker/deluge`.
 2. Copy the following code into the blank file. 
-  
+
 <details>
   <summary>Docker Compose</summary>
   
@@ -99,7 +103,7 @@ Below are the steps to get the Deluge container installed. You will be adjusting
   
 </details>
 
-2. Fill in *YOUR\_TIMEZONE\_HERE* with an appropriate tz database format timezone, which you can find [here](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
+3. Fill in *YOUR\_TIMEZONE\_HERE* with an appropriate tz database format timezone, which you can find [here](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
 4. Fill in *USERNAME* with your user account's username.
 5. Save the file, naming it `docker-compose.yml`. 
 6. Navigate to the deluge container folder where you saved docker-compose.yml.
@@ -120,11 +124,15 @@ Below are the steps to get the Deluge container installed. You will be adjusting
   	2. This will stop the Deluge container so that you can start Gluetun on port `8112`.
 13. Head over to the [Gluetun instructions](/docker/gluetun) to learn how to set up the VPN tunnel and start it before proceeding to the next Deluge section.
 
+</Steps>
+
 ## Configuring the Deluge VPN
 
 ### Project steps
 
-Below are the steps necessary to set up Deluge to connect through the Gluetun VPN tunnel. The full page version is available here.
+Below are the steps necessary to set up Deluge to connect through the Gluetun VPN tunnel.
+
+<Steps>
 
 1. Navigate to where you saved the Deluge `docker-compose.yml` file.
 	2. In this example, it's under `docker/deluge`.
@@ -191,8 +199,12 @@ Below are the steps necessary to set up Deluge to connect through the Gluetun VP
 7. If you go to the web UI at `http://localhost:8112`, you should notice that your IP address in the bottom right corner is different than your public one.
   
 ![deluge-1-1.jpg](/deluge-1-1.jpg)
+
+</Steps>
   
 #### Errors with `network_mode: container`
+
+<Steps>
   
 1. The container should start up with the previous configuration. If, however, you run into errors, you can shut Deluge down with the following command while inside the Deluge directory.
   	1. `docker compose down`
@@ -229,3 +241,5 @@ Below are the steps necessary to set up Deluge to connect through the Gluetun VP
   	1. `docker compose up -d`
   
 </details>
+
+</Steps>

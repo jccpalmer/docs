@@ -8,7 +8,6 @@ Welcome to my About me page! Below you will find various sections outlining who 
 
 ## A little about me
 
-  
 Hi there. My name is JC Palmer. I'm a writer with over twelve years of combined experience in journalism, technical writing and editing, and copy and content editing. Wherever I go, I bring a strong understanding of the English language, user empathy, and limitless desire to learn. I quickly and enthusiastically absorb knowledge, especially anything relating to technology.
 
 I don't stop until a project is done, then I start looking for the next thing. I excel at interviewing users to find pain points, and I know how to bridge the gap between developer and stakeholder. I am a novice coder, but I have started learning Python to get a headstart on learning topics such as machine learning and data analysis.
@@ -125,7 +124,7 @@ My humble homelab journey started with a Raspberry Pi 4 and Home Assistant, but 
 
 Having a homelab has taught me so much, yet I have even more to learn. I consider myself a novice apprentice with many of the skills I've picked up, such as Docker. However, my experience as a technical writer means that I excel at reading documentation, even that which is poorly-written. So, even when I don't know how to do something, I can quickly look up and figure how to do it.
 
-The homelab journey is still underway. As I write this, I'm building up a Cisco C240 M4SX, but it won't boot, so I'll be replacing it with a Dell R730XD. I also want to replace my Intel NUC 12 Pro with a Dell R730 to run all my virtual machines and containers. Finally, I need some kind of NVR, preferably with an NVMe slot, for my Frigate server.
+The homelab journey is still underway. As I write this, I just put a Dell R730XD into production as my new NAS, running TrueNAS Scale. I also want to replace my Intel NUC 12 Pro with a Dell R730 to run all my virtual machines and containers. Finally, I need some kind of NVR, preferably with an NVMe slot, for my Frigate server.
 
 The rest of my rack space will go to my network stack when I can build my own 1U OPNSense router, get a patch panel, and hopefully repair my Juniper EX3200 48-port PoE switch. I'm also considering building a 3U gaming rig for my Windows needs to get rid of my dual-boot setup.
 
