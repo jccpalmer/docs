@@ -13,12 +13,18 @@ export default defineConfig({
 			},
 			sidebar: [
 				{
+					label: 'Getting started',
+					items: [
+						{ label: 'Welcome!', slug: 'getting-started/landing'},
+					],
+				},
+				{
 					label: 'Docker',
 					items: [
 						{ label: 'Grav', slug: 'docker/grav/grav' },
 						{ label: 'Gluetun', slug: 'docker/gluetun/gluetun' },
 						{ label: 'Deluge', slug: 'docker/deluge-vpn/deluge-vpn' },
-					]
+					],
 				},
 				{
 					label: 'Software',

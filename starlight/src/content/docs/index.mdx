@@ -7,8 +7,8 @@ hero:
   image:
     file: ../../assets/houston.webp
   actions:
-    - text: About me
-      link: about/about-me
+    - text: Get started
+      link: getting-started/landing
       icon: right-arrow
       variant: primary
     - text: Check out my website!
@@ -21,16 +21,10 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 ## Next steps
 
 <CardGrid stagger>
-	<Card title="Getting started" icon="pen">
-		Head to the [landing page](landing.mdx) to get started!
+	<Card title="About me" icon="pen">
+		Learn more [about me](about/about-me) here!
 	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+	<Card title="Learn more" icon="open-book">
+		Learn more about the tech powering this site in [the Starlight Docs](https://starlight.astro.build/).
 	</Card>
 </CardGrid>
