@@ -1,3 +1,7 @@
+---
+title: About me
+---
+
 # About me
 
 Welcome to my About Me page! Below you will find various sections outlining who I am, my experience, and my goals. All of this is to help you to get me know me better. My contact info is also included here.
