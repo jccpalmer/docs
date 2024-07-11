@@ -19,7 +19,11 @@ The second step to this project was linking the Deluge container to a downloads 
 
 This saves a monumental amount of time and it is rather simple to set up. I highly recommend that all homelabbers have a NAS of some kind, and linking servers to it is a key factor in its overall convenience.
 
+---
+
 ## Prerequisites and preparation
+
+Here is what you need to get started on this project.
 
 ### Prerequisites
 
@@ -66,16 +70,16 @@ If the Deluge container goes down, simply navigate to its folder and recreate th
 
 </Steps>
 
+---
+
 ## Installing Deluge
 
-### Project steps
-
-Below are the steps to get the Deluge container installed. You will be adjusting this later, but this section is to help you get going. The full page version is available [here](/docker/deluge/install).
+Here are the steps you'll need to get the Deluge container installed. You will be adjusting this later, but this section is to help you get going.
 
 <Steps>
 
 1. Create a YAML file named `docker-compose.yml` in your text editor or IDE of your choice and save it to the directory created in Step 1 in Preparation. 
-    a. In this example, the file is saved under `~/docker/deluge`.
+    1. In this example, the file is saved under `~/docker/deluge`.
 2. Copy the following code into the blank file.
 
 </Steps>
@@ -106,14 +110,14 @@ Below are the steps to get the Deluge container installed. You will be adjusting
 4. Fill in *USERNAME* with your user account's username.
 5. Save the file, naming it `docker-compose.yml`. 
 6. Navigate to the deluge container folder where you saved docker-compose.yml.
-	a. `cd docker/deluge`
+	1. `cd docker/deluge`
 7. Input the following command to start up the container for automatic installation.
-	a. `docker-compose up -d`
+	1. `docker-compose up -d`
 8. Wait for the download and installation to finish.
 9. Once complete, open a web browser and enter the server's IP address followed by port `8112`.
-	a. In this example, that would be `http://localhost:8112`
+	1. In this example, that would be `http://localhost:8112`
 10. The Deluge web UI should open. It will ask for a username and password.
-	a. Input `admin` for *username* and `deluge` for *password*.
+	1. Input `admin` for *username* and `deluge` for *password*.
 11. You will see your server's public IP address in the bottom right corner. Confirm this by checking it via a site such as [What's My IP?](https://www.whatsmyip.org/). My IP address is blurred for security reasons.
 
 </Steps>
@@ -131,17 +135,17 @@ Below are the steps to get the Deluge container installed. You will be adjusting
 
 </Steps>
 
+---
+
 ## Configuring the Deluge VPN
 
-### Project steps
-
-Below are the steps necessary to set up Deluge to connect through the Gluetun VPN tunnel.
+Here are the steps that you'll need to set up Deluge to connect through the Gluetun VPN tunnel.
 
 <Steps>
 
 1. Navigate to where you saved the Deluge `docker-compose.yml` file.
-	2. In this example, it's under `docker/deluge`.
-3. Your code should look like the following with TZ filled in with your time zone and USERNAME with your account username.
+	1. In this example, it's under `docker/deluge`.
+2. Your code should look like the following with TZ filled in with your time zone and USERNAME with your account username.
 
 </Steps>
   
@@ -167,8 +171,8 @@ Below are the steps necessary to set up Deluge to connect through the Gluetun VP
   ```
 <Steps>  
 
-4. However, since we have told Gluetun to be listening on port `8112`, you need to remove it from the Deluge container's Docker Compose to avoid port conflicts.
-5. You need to also link Deluge to Gluetun's network. So your Docker Compose code should look like the following.
+3. However, since we have told Gluetun to be listening on port `8112`, you need to remove it from the Deluge container's Docker Compose to avoid port conflicts.
+4. You need to also link Deluge to Gluetun's network. So your Docker Compose code should look like the following.
 
 </Steps>
 
@@ -195,9 +199,9 @@ Below are the steps necessary to set up Deluge to connect through the Gluetun VP
   ```
 <Steps>
 
-6. Exit the Docker Compose file, then type the following command.
+5. Exit the Docker Compose file, then type the following command.
   	1. `docker compose up -d`
-7. If you go to the web UI at `http://localhost:8112`, you should notice that your IP address in the bottom right corner is different than your public one.
+6. If you go to the web UI at `http://localhost:8112`, you should notice that your IP address in the bottom right corner is different than your public one.
 
 </Steps>
 
