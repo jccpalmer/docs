@@ -7,8 +7,8 @@ export default defineConfig({
 		starlight({
 			title: 'My Docs',
 			social: {
-				mastodon: 'https://toot.community/@jccpalmer'
-				linkedin: 'https://linkedin.com/in/jccpalmer'
+				mastodon: 'https://toot.community/@jccpalmer',
+				linkedin: 'https://linkedin.com/in/jccpalmer',
 				github: 'https://github.com/jccpalmer/docs',
 			},
 			sidebar: [
