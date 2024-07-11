@@ -170,6 +170,8 @@ Below are the steps necessary to set up Deluge to connect through the Gluetun VP
 4. However, since we have told Gluetun to be listening on port `8112`, you need to remove it from the Deluge container's Docker Compose to avoid port conflicts.
 5. You need to also link Deluge to Gluetun's network. So your Docker Compose code should look like the following.
 
+</Steps>
+
   ```yaml
       ---
       version: "2.1"
@@ -191,7 +193,8 @@ Below are the steps necessary to set up Deluge to connect through the Gluetun VP
         network_mode:
           container: gluetun
   ```
-  
+<Steps>
+
 6. Exit the Docker Compose file, then type the following command.
   	1. `docker compose up -d`
 7. If you go to the web UI at `http://localhost:8112`, you should notice that your IP address in the bottom right corner is different than your public one.
