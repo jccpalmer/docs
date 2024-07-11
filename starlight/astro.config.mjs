@@ -7,19 +7,29 @@ export default defineConfig({
 		starlight({
 			title: 'My Docs',
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				mastodon: 'https://toot.community/@jccpalmer'
+				linkedin: 'https://linkedin.com/in/jccpalmer'
+				github: 'https://github.com/jccpalmer/docs',
 			},
 			sidebar: [
 				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
-					],
+					label: 'Docker',
+					autogenerate: { directory: 'docker' ,}
 				},
 				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					label: 'Software',
+					autogenerate: { directory: 'software' },
+				},
+				{
+					label: 'Hardware',
+					autogenerate: { directory: 'hardware' },
+				},
+				{
+					label: 'About',
+					items: [
+						// Each item here is one entry in the navigation menu.
+						{ label: 'About me', slug: 'about/about-me' },
+					],
 				},
 			],
 		}),

@@ -6,7 +6,7 @@ title: About me
 
 Welcome to my About me page! Below you will find various sections outlining who I am, my experience, and my goals. All of this is to help you to get me know me better. My contact info is also included here.
 
-## About me
+## A little about me
 
   
 Hi there. My name is JC Palmer. I'm a writer with over twelve years of combined experience in journalism, technical writing and editing, and copy and content editing. Wherever I go, I bring a strong understanding of the English language, user empathy, and limitless desire to learn. I quickly and enthusiastically absorb knowledge, especially anything relating to technology.
