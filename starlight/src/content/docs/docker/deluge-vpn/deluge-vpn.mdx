@@ -78,8 +78,8 @@ Below are the steps to get the Deluge container installed. You will be adjusting
     a. In this example, the file is saved under `~/docker/deluge`.
 2. Copy the following code into the blank file. 
 
-  ```yaml
-      	---
+  ```
+      ---
       version: "2.1"
       services:
         deluge:
@@ -160,8 +160,8 @@ Below are the steps necessary to set up Deluge to connect through the Gluetun VP
 4. However, since we have told Gluetun to be listening on port `8112`, you need to remove it from the Deluge container's Docker Compose to avoid port conflicts.
 5. You need to also link Deluge to Gluetun's network. So your Docker Compose code should look like the following.
 
-  ```yaml
-      	---
+  ```
+      ---
       version: "2.1"
       services:
         deluge:
@@ -200,8 +200,8 @@ Below are the steps necessary to set up Deluge to connect through the Gluetun VP
   	1. `docker compose down`
 2. Open your `docker-compose.yml` file and try changing `network_mode` to `service: gluetun` like the below code.
 
-  ```yaml
-      	---
+  ```
+      ---
       version: "2.1"
       services:
         deluge:
