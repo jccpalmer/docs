@@ -1,3 +1,7 @@
+---
+title: Deluge VPN
+---
+
 # Deluge VPN
 
 ## Overview

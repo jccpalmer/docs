@@ -2,9 +2,9 @@
 title: About me
 ---
 
-# About me
+# Hello!
 
-Welcome to my About Me page! Below you will find various sections outlining who I am, my experience, and my goals. All of this is to help you to get me know me better. My contact info is also included here.
+Welcome to my About me page! Below you will find various sections outlining who I am, my experience, and my goals. All of this is to help you to get me know me better. My contact info is also included here.
 
 ## About me
 
@@ -20,6 +20,8 @@ For the time being, this documentation portfolio is a work-in-progress as I fles
 Odds are if you've landed here, you have my contact info. My main [website](https://www.jccpalmer.com) is under construction, but I have prioritized this portfolio site.
 
 Please feel free to reach out with questions. [Email](mailto:contact@jccpalmer.com) is best.
+
+---
   
 ### Experience
 
@@ -51,6 +53,8 @@ I mentored countless staff writers and freelancers, helping to shape them into s
 
 I believe that editors are just as important as writers because they take the raw work and mold it into something stronger, ideally enhancing the writer and their skills in the process. A good editor, however, also learns along the way, too — they should be willing to expand their horizons, to not get so set in their ways, and to open themselves to someone else's perspective.
 
+---
+
 ### Goals
 
 #### Short-term goals
@@ -76,6 +80,8 @@ As you might have guessed, my long-term goal is to shift careers into data scien
 What draws me to data science? I think it's the solving problems with data. When I had my internship toward the latter end of my undergrad, I fell into the role of a data analyst and I loved it. I love working with data; my brain just works that way. I love to write and I always will, but when I look at the field of data science, I feel that pull, that calling I grew up hearing people talk about.
 
 So, I'm willing to do what it takes to make it happen. Yes, it will take blood, sweat, and tears (hopefully not the former), but I believe in living a virtuous life. One of the cardinal virtues is temperance, which includes discipline. Discipline will see me through the tough times, the days where I don't want to study, or work on my portfolio (such as I've done here), or apply for yet another job. I will have to keep going, and you can bet that I will.
+
+---
 
 ### Interests
 
