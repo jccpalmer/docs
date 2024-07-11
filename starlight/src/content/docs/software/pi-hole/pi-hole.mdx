@@ -2,21 +2,30 @@
 title: Pi-hole
 ---
 
-# Pi-hole
+import { Steps } from '@astrojs/starlight/components';
+import { Aside } from '@astrojs/starlight/components';
 
-This document describes how to set up Pi-hole for network-wide ad blocking. It also includes optional steps for setting up Unbound for recursive DNS resolution in case you don't want to use a third-party DNS resolver like Google or Cloudflare.
-
-## Overview
+Here, I will show you how to set up Pi-hole for network-wide ad blocking. These instructions also include optional steps for setting up Unbound for recursive DNS resolution in case you don't want to use a third-party DNS resolver like Google or Cloudflare.
   
 [Pi-hole](https://pi-hole.net) is a popular DNS sinkhole that serves as a network-wide ad blocker. It's easy to set up and it works wonders on blocking ads and trackers on your network. It can run on very light hardware, including its namesake, the Raspberry Pi. 
 
 I run my Pi-hole instance on a Raspberry Pi Zero 2 W that is dedicated to the task.
 
-With this project, I also use [Unbound](https://www.nlnetlabs.nl/projects/unbound/about/) for recursive DNS resolution. It supports both DNS-over-TLS and DNS-over-HTTPS for increased security and privacy. This means that I am not subject to a third-party for my DNS resolution, like Cloudflare or Google. One the great things about this is that it doesn't require much more effort or configuration on top of getting Pi-hole going. This is an optional step.
+With this project, I also use [Unbound](https://www.nlnetlabs.nl/projects/unbound/about/) for recursive DNS resolution. It supports both DNS-over-TLS and DNS-over-HTTPS for increased security and privacy. This means that I am not subject to a third-party for my DNS resolution, like Cloudflare or Google. One of the great things about this is that it doesn't require much more effort or configuration on top of getting Pi-hole going. This is an optional step.
+
+---
 
 ## Prerequisites and preparation
 
-To use Pi-hole, it is recommended that you have a supported Linux distribution (distro) running. The Pi-hole project officially supports Raspberry Pi OS, Ubuntu, Debian, Fedora, and CentOS. You can also install Pi-hole in a Docker container, which is not described here.
+To summarize, you will need the following:
+
+- A supported Linux distro
+- A machine that can run 24/7
+- 2GB of storage (4GB is preferred)
+- 512MB of RAM
+- Access to your router's DNS settings
+
+In order to use Pi-hole, it is recommended that you have a supported Linux distribution (distro) running. The Pi-hole project officially supports Raspberry Pi OS, Ubuntu, Debian, Fedora, and CentOS. You can also install Pi-hole in a Docker container, which is not described here.
 
 Unbound should be available in all distro repositories.
 
@@ -28,12 +37,13 @@ You will also need access to your router's DNS settings if you wish to apply Pi-
 
 If you can't change your router's DNS settings, you can still use Pi-hole for ad blocking by changing the DNS settings on your devices. I encourage you to look up how to do that for your device(s) specifically as I will not cover that here.
 
-  
-## Installing Pi-hole
-  
-### Project steps
+---
 
-Below are the steps needed to get Pi-hole installed. The full page version may be viewed [here](/software/pi-hole/install-pi-hole).
+## Installing Pi-hole
+
+You'll need to follow the below steps to get Pi-hole installed.
+
+<Steps>
 
 1. Open a terminal on the machine you'd like to install Pi-hole on, be it locally or over SSH.
 2. Input the following command in the terminal.
@@ -50,18 +60,46 @@ Below are the steps needed to get Pi-hole installed. The full page version may b
 12.  Be sure to set a static IP address for the Pi-hole machine in your router settings.
 13. To access the admin interface, in your browser, type in either `http://pi.hole/admin` or `http://SERVERIP/admin`.
 14. The following screen will appear.
-		![pi-hole-login.png](/pi-hole-login.png)
+
+</Steps>
+
+<Aside type="caution" title="Coming soon!">
+  Screenshots coming soon.
+</Aside>
+
+<Steps>
+
 15. To access the password, go back to the terminal window and look several lines up from the bottom for a line that says `Web Interface Password:`.
-		![pi-hole-password.png](/pi-hole-password.png)
+
+</Steps>
+
+<Aside type="caution" title="Coming soon!">
+  Screenshots coming soon.
+</Aside>
+
+<Steps>
+
 16. Once you enter your password, you will see the web interface, which should look like the below image.
-		![pi-hole-interface.png](/pi-hole-interface.png)
+
+</Steps>
+
+<Aside type="caution" title="Coming soon!">
+  Screenshots coming soon.
+</Aside>
+
+<Steps>
+
 17. Go to your router's DNS settings and input the Pi-hole server's IP address. Save the options and go test an ad-heavy website, such as [MSN](https://www.msn.com).
+
+</Steps>
+
+---
   
 ## Optional: Installing Unbound
-  
-### Project steps
 
-Below are the steps needed to get Unbound installed and configured. The full page version may be viewed [here](/software/pi-hole/install-unbound).
+Below are the steps needed to get Unbound installed and configured.
+
+<Steps>
 
 1. Open a terminal on the machine where you installed Pi-hole, be it locally or over SSH.
 2. For Debian-based distros, input the following command.
@@ -69,9 +107,12 @@ Below are the steps needed to get Unbound installed and configured. The full pag
 3. After the installation completes, you will need to set up the config file for Pi-hole. To do so, open the following file in your command line text editor, such as nano.
 	1. `/etc/unbound/unbound.conf.d/pi-hole.conf`
 4. Copy the following contents into the blank file.
+
+</Steps>
+
 <details>
   <summary>Unbound config</summary>
-  
+```
       server:
       # If no logfile is specified, syslog is used
       # logfile: "/var/log/unbound/unbound.log"
@@ -137,7 +178,10 @@ Below are the steps needed to get Unbound installed and configured. The full pag
       private-address: 10.0.0.0/8
       private-address: fd00::/8
       private-address: fe80::/10
+```
 </details>
+
+<Steps>
 
 5. 	Restart Unbound with the following command.
 	1. `sudo service unbound restart`
@@ -146,12 +190,24 @@ Below are the steps needed to get Unbound installed and configured. The full pag
 8. Click the checkbox for **Custom 1 (IPV4)**, then in the text box, enter the following. (This is telling Pi-hole to listen on the localhost at port `5335`, which is where the above config file told Unbound to broadcast to.)
 	1. `127.0.0.1#5335`
 9. Make sure your settings match the below image.
-		![pi-hole-unbound.png](/pi-hole-unbound.png)
+
+</Steps>
+
+<Aside type="caution" title="Coming soon!">
+  Screenshots coming soon.
+</Aside>
+
+<Steps>
+
 10. Scroll down to the bottom of the page and click **Save**.
+
+</Steps>
 
 ### Resolving the resolvconf.conf errors
 
 If you're using a Debian-based distro for this, you might encounter a conflict with Unbound's resolver and the system's resolvconf service. This can interfere with Pi-hole/Unbound, so here's how to fix that issue.
+
+<Steps>
 
 1. First check to see if the conflict is an issue. Type in the following command on the machine where you installed Pi-hole (locally or over SSH).
 	1. `systemctl is-active unbound-resolvconf.service`
@@ -162,3 +218,5 @@ If you're using a Debian-based distro for this, you might encounter a conflict w
 	2. `sudo rm /etc/unbound/unbound.conf.d/resolvconf_resolvers.conf`
 4. Finally, restart Unbound with the following command.
 	1. `sudo service unbound restart`
+
+</Steps>
