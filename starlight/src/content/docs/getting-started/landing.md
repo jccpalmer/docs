@@ -1,8 +1,7 @@
 ---
 title: Landing page
----
-
 import { Icon } from '@astrojs/starlight/components';
+---
 
 Welcome to my documentation portfolio.
 
