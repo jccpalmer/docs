@@ -2,9 +2,12 @@
 title: Gluetun
 ---
 
-# Gluetun VPN tunnel
+import { Steps } from '@astrojs/starlight/components';
+import { Aside } from '@astrojs/starlight/components';
 
-## Overview
+## Background
+
+Gluetun is a thin, lightweight container written by qdm12 ([GitHub link](https://github.com/qdm12/gluetun)) with Alpine Linux as the base for a minimal install size. It allows for the tunneling of other containers' traffic through a supported VPN of your choice. This is especially useful for containers that connect to the internet, such as a BitTorrent application.
 
 The goal of this project was to create a secure way to route traffic for some of my internet-facing Docker containers. I discovered the project via a YouTube video and dove right in. I use Proton VPN, a provider that makes it easy to get my sign-in credentails for the [OpenVPN](https://protonvpn.com/support/vpn-config-download/) and [Wireguard](https://protonvpn.com/support/wireguard-configurations/) protocols. 
 
@@ -14,9 +17,7 @@ The developer of Gluetun has built a wiki with instructions for each supported V
 
 ## Pre-requisites and preparation
 
-### Background
-
-Gluetun is a thin, lightweight container written by qdm12 ([GitHub link](https://github.com/qdm12/gluetun)) with Alpine Linux as the base for a minimal install size. It allows for the tunneling of other containers' traffic through a supported VPN of your choice. This is especially useful for containers that connect to the internet, such as a BitTorrent application.
+Here's what you need to get started with Gluetun.
 
 ### Prerequisites
 
@@ -33,18 +34,21 @@ No preparation needed for this project.
 
 ## Installation
 
-### Project steps
+Here are the steps you need to get the Gluetun container installed.
 
-Below are the steps needed to get the Gluetun container installed.
+<Steps>
 
 1. Create a folder for the Gluetun container.
 	1. In this example, that would be `docker/gluetun`
-1. Move into that new directory.
+2. Move into that new directory.
 	1. `cd docker/gluetun`
-2. Create a file called `docker-compose.yml`
-3. Open the `docker-compose.yml` file in a text editor.
-4. Copy the following contents into it. It is recommended to copy this code first into a blank notepad file to strip any formatting. (Also note the indentation; YAML is very particular about indentation.)
-```
+3. Create a file called `docker-compose.yml`
+4. Open the `docker-compose.yml` file in a text editor.
+5. Copy the following contents into it. It is recommended to copy this code first into a blank notepad file to strip any formatting. (Also note the indentation; YAML is very particular about indentation.)
+
+</Steps>
+
+```yaml
 version: "3"
 services:
   gluetun:
@@ -73,11 +77,22 @@ services:
       # Timezone for accurate log times
       - TZ=YOURTIMEZONE
 ```
+
+<Steps>
+
 6. You will need to determine which protocol your VPN provider wants you to use. ProtonVPN, for example, uses OpenVPN at time of writing and did not offer a Wireguard configuration.
 7. Exit the text editor.
-8. If you are following the [Deluge VPN](Docker/Deluge VPN/deluge-vpn.md) instructions, do not start the Gluetun container yet.
-9. If you are not following the Deluge VPN instructions, then type the following.
+
+</Steps>
+
+<Aside>If you are following the [Deluge VPN](../../deluge-vpn/deluge-vpn) instructions, do not start the Gluetun container yet. Head over to those instructions, specifically the [Configuring the Deluge VPN](../../deluge-vpn/deluge-vpn#configuring-the-deluge-vpn) section.</Aside>
+
+<Steps>
+
+8. If you are not following the Deluge VPN instructions, then type the following.
 	1. `docker-compose up -d`
-10. The Gluetun container will download the resources it needs and start. 
-11. To tunnel other containers through Gluetun, you will need to add the following line to their `network_mode` (with the quotes).
+9. The Gluetun container will download the resources it needs and start. 
+10. To tunnel other containers through Gluetun, you will need to add the following line to their `network_mode` (with the quotes).
 	1. `"service:gluetun"`
+
+</Steps>
