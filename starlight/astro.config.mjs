@@ -10,7 +10,7 @@ export default defineConfig({
 				linkedin: 'https://linkedin.com/in/jccpalmer',
 				github: 'https://github.com/jccpalmer/docs',
 			},
-			favicon: 'images/favicon.svg',
+			favicon: 'favicon.svg',
 			sidebar: [
 				{
 					label: 'Getting started',
