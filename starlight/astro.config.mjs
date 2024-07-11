@@ -14,11 +14,17 @@ export default defineConfig({
 			sidebar: [
 				{
 					label: 'Docker',
-					autogenerate: { directory: 'docker' ,}
+					items: [
+						{ label: 'Grav', slug: 'docker/grav/grav' },
+						{ label: 'Gluetun', slug: 'docker/gluetun/gluetun' },
+						{ label: 'Deluge', slug: 'docker/deluge-vpn/deluge-vpn' },
+					]
 				},
 				{
 					label: 'Software',
-					autogenerate: { directory: 'software' },
+					items: [
+						{ label: 'Pi-hole', slug: 'software/pi-hole/pi-hole'},
+					],
 				},
 				{
 					label: 'Hardware',
