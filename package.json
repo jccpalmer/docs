@@ -4,11 +4,12 @@
   "description": "Astro",
   "main": "index.js",
   "scripts": {
-    "build": "astro build", 
+    "build": "astro build",
     "start": "astro dev",
     "deploy": "astro deploy"
   },
   "dependencies": {
+    "@astrojs/markdown-remark": "^5.1.1",
     "astro": "^1.0.0"
   },
   "repository": {
