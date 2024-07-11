@@ -1,4 +1,4 @@
-# JC's docs repo
+# JC's docs portfolio
 
 ## Welcome!
 
