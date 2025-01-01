@@ -30,6 +30,7 @@ export default defineConfig({
 					label: 'Software',
 					items: [
 						{ label: 'Pi-hole', slug: 'software/pi-hole/pi-hole'},
+						{ label: 'NixOS', slug: 'software/nixos/nixos'},
 					],
 				},
 				{
