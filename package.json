@@ -1,25 +1,17 @@
 {
-  "name": "astro",
-  "version": "1.0.0",
-  "description": "Astro",
-  "main": "index.js",
+  "name": "docs-new",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "build": "astro build",
+    "dev": "astro dev",
     "start": "astro dev",
-    "deploy": "astro deploy"
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/markdown-remark": "^5.1.1",
-    "astro": "^1.0.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jccpalmer/docs.git"
-  },
-  "author": "JC Palmer",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jccpalmer/docs/issues"
-  },
-  "homepage": "https://github.com/jccpalmer/docs#readme"
+    "@astrojs/starlight": "^0.31.1",
+    "astro": "^5.1.5",
+    "sharp": "^0.32.5"
+  }
 }
