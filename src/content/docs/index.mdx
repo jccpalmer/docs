@@ -1,0 +1,30 @@
+---
+title: JC's portfolio
+description: Welcome to my docs portfolio!
+template: splash
+hero:
+  tagline: Welcome to my docs portfolio!
+  image:
+    file: ../../assets/houston.webp
+  actions:
+    - text: Get started
+      link: getting-started/landing
+      icon: right-arrow
+      variant: primary
+    - text: Check out my website!
+      link: https://www.jccpalmer.com
+      icon: external
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## Next steps
+
+<CardGrid stagger>
+	<Card title="About me" icon="pen">
+		Learn more [about me](about/about-me) here!
+	</Card>
+	<Card title="Learn more" icon="open-book">
+		Learn more about the tech powering this site in [the Starlight Docs](https://starlight.astro.build/).
+	</Card>
+</CardGrid>
