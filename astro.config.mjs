@@ -33,7 +33,7 @@ export default defineConfig({
 					items: [
 						{ label: 'Hugo', slug: 'software/hugo' },
 						{ label: 'Starlight', slug: 'software/starlight' },
-						{ label: 'Pi-hole', slug: 'software/pihole'},
+						{ label: 'Pi-hole', slug: 'software/pi-hole'},
 					],
 				},
 				{
