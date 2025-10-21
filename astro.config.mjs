@@ -52,7 +52,6 @@ export default defineConfig({
 				{
 					label: 'About',
 					items: [
-						// Each item here is one entry in the navigation menu.
 						{ label: 'About me', slug: 'about/about-me' },
 					],
 				},

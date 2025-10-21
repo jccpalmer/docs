@@ -18,8 +18,6 @@ For the time being, this documentation portfolio is a work-in-progress as I fles
 
 Odds are if you've landed here, you have my contact info. My main [website](https://www.jccpalmer.com) is under construction, but I have prioritized this portfolio site.
 
-Please feel free to reach out with questions. [Email](mailto:contact@jccpalmer.com) is best.
-
 ---
   
 ### Experience

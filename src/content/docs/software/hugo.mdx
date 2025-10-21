@@ -1,3 +1,21 @@
 ---
 title: Hugo
 ---
+
+import { Steps } from '@astrojs/starlight/components';
+import { Aside } from '@astrojs/starlight/components';
+
+After I decided to switch away from [Grav](/docker/grav), I stumbled across a static site generator (SSG) called [Hugo](https://gohugo.io). I wasn't, and still am not, familiar with SSGs, except for how I operate this documentation portfolio. (See the [Starlight](/software/starlight) page for more information on that.) My entire web experience has centered around content management systems (CMS), such as WordPress. But even a flat-file system like Grav could prove cumbersome.
+
+The beauty of an SSG is that I can work on the site files anywhere that I've cloned the associated git repository. I make my changes, push them to GitHub, and then my site rebuilds itself with the new content. In many ways, it's a lot more convenient than a CMS, which requires logging in to the web server, creating a post or tweaking a setting, and then saving the changes. A CMS, however, has an advantage in that it's a graphical user interface (GUI) and thus more user-friendly. SSGs rely on config files and thus require some level of coding knowledge / experience.
+
+Hugo is blazingly fast. Of course, my main site doesn't have too much content yet as of writing this, but what it does have feels markedly quicker than the same content on Grav. Plus, I get to write my site with a docs-as-code philosophy. (Or would it be blog-as-code?)
+
+## The setup
+
+I chose to operate Hugo on GitHub Pages with automatic GitHub Actions that update and rebuild the site when I commit new changes. This process is, for the most part, seamless. I pointed my domain name to GitHub Pages, which gave me a fully qualified domain name (FQDN) that I own for the site, plus HTTPS.
+
+So here I will document what I did to get [jccpalmer.com](https://jccpalmer.com) running on Hugo and GitHub Pages.
+
+## Prerequisites and preparation
+
