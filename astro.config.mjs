@@ -6,10 +6,10 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'My Docs',
-			social: {
-				linkedin: 'https://linkedin.com/in/jccpalmer',
-				github: 'https://github.com/jccpalmer/docs',
-			},
+			social: [
+				{ icon: 'linkedin', label: 'LinkedIn', href: 'https://www.linkedin.com/in/jccpalmer' },
+				{ icon: 'github', label: 'GitHub', href: 'https://www.github.com/jccpalmer'},
+			],
 			favicon: 'favicon.svg',
 			sidebar: [
 				{
@@ -33,14 +33,13 @@ export default defineConfig({
 					items: [
 						{ label: 'Hugo', slug: 'software/hugo' },
 						{ label: 'Starlight', slug: 'software/starlight' },
-						{ label: 'Pi-hole', slug: 'software/pi-hole' },
+						{ label: 'Pi-hole', slug: 'software/pihole'},
 					],
 				},
 				{
 					label: 'Hardware',
 					items: [
 						{ label: 'TrueNAS Scale', slug: 'hardware/truenas-scale' },
-						{ label: 'BlueBubbles', slug: 'hardware/bluebubbles' },
 					],
 				},
 				{
